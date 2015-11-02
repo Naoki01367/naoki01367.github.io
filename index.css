@@ -274,6 +274,9 @@ html,body{
   margin:0 auto;
   padding-bottom:30px;
   text-align:center;
+}
+
+#articleD > p > strong{
   color:#8B0000;
 }
 
