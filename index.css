@@ -1,356 +1,393 @@
 html,body{
+  width:100%;
+  min-height:100%;
+  margin:0;
+  font-family:游ゴシック体, 'Yu Gothic', YuGothic ;
+  font-size:15px;
+  color:#696969;
+  background-color:whitesmoke;
+}
+
+#wrapper{
+  width:100%;
+  height:auto;
+  margin:0;
+}
+
+#contentA{
   margin:0;
   width:100%;
-  font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro';
+  height:100vh;
+  background-image:url(R1030627.JPG);no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow:hidden;
   position:relative;
-  -webkit-font-smoothing: antialiased;
-  transition-delay: 0s;
-  transition-duration: 0.3s;
-  transition-property: all;
-  transition-timing-function: ease;
+}
+
+#contentA > img{
+  margin:0;
+  width:100%;
+  z-index: 0;
+}
+
+#shadow{
+  width:100%;
+  margin:0;
+  height:100vh;
+  background-color:rgba(0,0,0,0.7);
+  z-index: 3;
 }
 
 #header{
   width:100%;
-  height:300px;
-  margin:0;
-  box-shadow:0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+  height:60px;
+  background-color:black;
+  opacity:0.9;
+  position:fixed;
+  top:0;
+  z-index:999;
 }
 
-#header > h1{
+#headerwidth{
+  width:1040px;
+  height:60px;
+  margin:0 auto;
+}
+
+.logo{
   display:block;
-  width:100%;
-  height:250px;
+  color:silver;
+  margin:0;
+  padding:17px 0;
+  float:left;
+  font-size:20px;
+  font-family:'PT Sans';
+  font-weight:500;
+  letter-spacing:1px;
+  text-decoration:none;
+  transition:all 0.3s;
+}
+
+.logo:hover{
+  color:white;
+}
+
+.nav{
+  float:right;
+  display: block;
+  margin:0;
+  padding:0;
+  height:60px;
+  list-style:none;
+}
+
+.nav > li{
+  float:left;
+  height:60px;
+  margin:0 20px;
+}
+
+.nav > li > a{
+  display: block;
+  text-decoration:none;
+  color:silver;
+  padding:20px 0;
+  font-family:'PT Sans';
+  font-weight:500;
+  font-size:14px;
+  letter-spacing:1px;
+  transition:all 0.3s;
+}
+
+.nav > li > a:hover{
+  color:white;
+}
+
+#title{
+  position:absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  margin:auto auto;
+  font-family:'PT Sans';
+  width:850px;
+  height:91px;
+  z-index:1;
+}
+
+#title > h2{
   text-align:center;
   margin:0;
-  font-family:Gill Sans;
+  padding:0;
+  color:white;
+  font-size:50px;
   font-weight:500;
-  font-size:40px;
+  letter-spacing:1px;
 }
 
-#header > h1 > p{
+#title > h6{
+  text-align:center;
+  margin:0;
+  padding:0;
+  color:silver;
+  font-family: 'Varela Round';
+  font-size:16px;
+  font-weight:500;
+  letter-spacing:1px;
+}
+
+#title > p{
+  width:350px;
+  font-family:游ゴシック体, 'Yu Gothic', YuGothic ;
+  font-size:14px;
+  color:silver;
+  margin:60px auto 0 auto;
+}
+
+#title > a{
   display: block;
-  padding:102px 0;
-  margin:0;
-}
-
-#header > nav{
-  display:block;
-  width:100%;
-  height:50px;
-  margin:0;
+  width:180px;
+  margin:40px auto;
+  padding:10px 0;
+  text-decoration:none;
+  text-align:center;
+  color:#8B0000;
   background-color:white;
+  opacity:0.6;
+  border-radius:5px;
+  font-family:'Varela Round';
+  font-size:16px;
+  letter-spacing:0.1em;
+  transition:all 0.5s;
 }
 
-#header > nav > ul{
-  display: block;
-  width:440px;
-  text-align: center;
-  height:50px;
+#title > a:hover{
+  color:white;
+  background-color:#8B0000;
+}
+
+#contentB{
+  width:100%;
+  height:150px;
+  margin:0;
+  padding:60px 0;
+  background-color:whitesmoke;
+  border-bottom:solid 1px #E5EAEC;
+}
+
+.article > img{
+  width:150px;
+  float:left;
+}
+
+.pr-p{
+  width:860px;
+  margin:0;
+  padding:0 0 0 30px;
+  float:left;
+  font-size:15px;
+  color:#696969;
+}
+
+.pr-p > strong{
+  color:#8B0000;
+}
+
+.article{
+  width:1040px;
+  height:150px;
   margin:0 auto;
   padding:0;
-}
-
-#header > nav > ul > li{
-  list-style: none;
-  float:left;
-  text-align:center;
-  width:70px;
-  margin:0;
-  padding:0 20px;
-}
-
-#header > nav > ul > li > a{
-  display:block;
-  text-decoration:none;
-  color:black;
-  padding:8px 0 9px 0;
-  border-top:solid 1px white;
-  -o-transition: .3s;
-  -ms-transition: .3s;
-  -moz-transition: .3s;
-  -webkit-transition: .3s;
-}
-
-#header > nav > ul > li > a:hover{
-  color:gray;
-  border-top:solid 1px black;
-  -webkit-transition: all .2s ease-out;
-  -moz-transition: all .2s ease-out;
-  -o-transition: all .2s ease-out;
-  transition: all .2s ease-out;
-}
-
-#top{
-  width:100%;
-  margin:0;
-}
-
-#top > img{
-  display: block;
-  width:100%;
-  height:auto;
-  margin:0;
-  box-shadow:0px 2px 6px 0px rgba(0, 0, 0, 0.15);
-}
-
-#message{
-  width:60%;
-  float:left;
-  margin:0;
-}
-
-#message > p{
-  float:right;
-  width:60%;
-  margin-right:40px;
-  vertical-align:baseline;
-  padding:30px;
-  background-color:white;
-  border-radius:40px;
-}
-
-#photo{
-  width:40%;
-  float:right;
-  margin:0;
-}
-
-#photo > img{
-  width:260px;
-  margin:80px 40px;
-}
-
-#about{
-  width:100%;
-  margin:0;
-}
-
-#skill{
-  width:100%;
-  height:1000px;
-  margin:0;
-  background-color:whitesmoke;
-}
-
-#history{
-  width:100%;
-  margin:0;
-  background-color:whitesmoke;
-}
-
-#vision{
-  width:100%;
-  margin:0;
-}
-
-#blog{
-  width:100%;
-  margin:0;
-  background-color:whitesmoke;
-}
-
-.title{
-  text-align:center;
-  font-family:PT Sans;
-  font-weight: 500;
-  font-size:36px;
-  padding:50px 0;
-  margin:0;
-}
-
-#about > img{
-  display:block;
-  width:260px;
-  margin:0 auto;
 }
 
 .heading{
-  display:block;
-  margin:15px auto;
-  text-align:center;
-  width:400px;
-  border-bottom:solid 1px black;
+  color:#696969;
+  margin:0;
+  padding:0;
+  font-family:'PT Sans';
+  font-weight:500;
+  letter-spacing:1px;
 }
 
-.content{
-  width:45%;
+#contentC{
+  width:100%;
+  height:800px;
+  margin:0;
+  padding:60px 0;
+  background-color:white;
+  border-bottom:solid 1px #E5EAEC;
+}
+
+.message-title{
+  width:30%;
+  margin:0;
+  padding:379px 0;
+  float:left;
+  font-family:'PT sans';
+  font-weight:500;
+  letter-spacing:0.1em;
+  color:#8B0000;
+}
+
+.message{
+  width:70%;
+  margin:0;
+  padding:0;
+  float:left;
+  font-size:15px;
+  color:#696969;
+}
+
+#contentD{
+  width:100%;
+  height:600px;
+  margin:0;
+  padding:60px 0;
+  background-color:whitesmoke;
+  border-bottom:solid 1px #E5EAEC;
+}
+
+#articleD{
+  width:1100px;
+  height:300px;
   margin:0 auto;
-  padding:50px 0;
+  padding:0;
 }
 
-.link{
-  text-decoration:none;
-  color:orange;
-  border-bottom:dashed 1px orange;
+#articleD > h1{
+  width:1040;
+  margin:0 auto;
+  padding:0 0 30px 0;
+  font-family:'PT sans';
+  font-weight:500;
+  letter-spacing:0.1em;
+  color:#8B0000;
+  text-align:center;
+}
+
+#articleD > p{
+  width:700px;
+  margin:0 auto;
+  padding-bottom:30px;
+  text-align:center;
+  color:#8B0000;
 }
 
 .skill-box{
-  width:1500px;
-  height:auto;
-  margin:0 auto;
-}
-
-.skill-col{
-  float:left;
-  width:335px;
-  height:auto;
-  margin:10px;
-}
-
-.skill-col > img{
-  display:block;
-  width:300px;
+  width:306px;
   height:300px;
-  margin:0 auto;
-  background-color:gray;
-}
-
-.parameters{
-  width:335px;
-  height:150px;
   margin:0;
-  padding:0;
-  list-style:none;
-}
-
-.true{
-  list-style:none;
-  text-align:center;
-  width:330px;
-  height:18px;
-  color:white;
-  border:solid 1px orange;
-  background-color:orange;
-}
-
-.false{
-  list-style:none;
-  text-align:center;
-  width:330px;
-  height:18px;
-  color:orange;
-  border:solid 1px orange;
-}
-
-#vision-box{
-  width:795px;
-  height:326px;
-  margin:30px auto 0 auto;
-  background-color:whitesmoke;
-  border-radius:20px;
-}
-
-#col{
-  width:245px;
-  padding:10px;
-  height:auto;
+  padding:0 30px;
   float:left;
-}
-
-#col > img{
-  display: block;
-  width:150px;
-  margin:0 auto;
-  padding:15px;
-}
-
-#col > p{
-  display: block;
-  margin:0 auto;
-  padding:15px;
   text-align: center;
 }
 
-#bloglist{
-  width:1200px;
-  height:500px;
-  margin:0 auto;
-  padding-bottom:150px;
-}
-
-.box{
-  float:left;
-  width:360px;
-  height:auto;
-  margin:20px;
-  text-decoration:none;
-  color:black;
-}
-
-.box > img{
-  width:360px;
-  max-height:240px;
-  overflow: hidden;
-  margin:0;
-  padding-bottom:10px;
-}
-
-.box > p{
-  width:320px;
-  height:auto;
-  margin:0;
-  padding:20px;
+.skill-box > img{
+  display: block;
+  width:150px;
+  margin:20px auto 40px auto;
 }
 
 #footer{
   width:100%;
-  height:100px;
+  height:330px;
   margin:0;
-  background-color:black;
+  background-image:url(footer.JPG);no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow:hidden;
 }
 
-#footer > nav{
+#footer-top{
+  width:100%;
+  height:290px;
+  margin:0;
+  background-color:#8B0000;
+  opacity:0.9;
+}
+
+#foonter-top-article{
+  width:1040px;
+  height:290px;
+  margin:0 auto;
+}
+
+#footer-bottom-article{
+  width:1040px;
+  height:40px;
+  margin:0 auto;
+}
+
+.footer-right{
+  color:silver;
+  margin:0;
+  padding:11px 0;
+  font-family:Quicksand;
+  font-size:12px;
+  letter-spacing:0.1em;
+  float:right;
+}
+
+.footer-left{
+  color:silver;
+  margin:0;
+  padding:11px 0;
+  font-family:Quicksand;
+  font-size:12px;
+  letter-spacing:0.2em;
+}
+
+.footer-box{
+  width:50%;
+  height:290px;
+  margin:0;
   float:left;
-  width:550px;
-  height:100px;
-  margin:0;
-  padding-left:40px;
 }
 
-#footer > nav > ul{
-  display: block;
-  width:550px;
-  height:100px;
+.footer-box > p{
+  color:white;
   margin:0;
   padding:0;
+  font-size:14px;
 }
 
-#footer > nav > ul > li{
-  list-style: none;
-  float:left;
-  text-align:center;
-  width:70px;
+.footer-heading{
+  color:white;
   margin:0;
-  padding:0 20px;
+  padding:30px 0;
+  font-family:'PT sans';
+  font-weight:500;
+  letter-spacing:0.1em;
 }
 
-#footer > nav > ul > li > a{
-  display:block;
+.en{
+  color:white;
+  margin:0;
+  padding:0;
+  font-size:15px;
+  font-family:游ゴシック体, 'Yu Gothic', YuGothic ;
+  font-weight:500;
+  letter-spacing:0.1em;
+  color:white;
+}
+
+.en > a{
   text-decoration:none;
+  padding:0 0 5px 0;
   color:white;
-  padding:16px 0 17px 0;
-  margin:17px 0;
-  border-top:solid 1px black;
-  -o-transition: .3s;
-  -ms-transition: .3s;
-  -moz-transition: .3s;
-  -webkit-transition: .3s;
+  border-bottom:solid 1px white;
 }
 
-#footer > nav > ul > li > a:hover{
-  color:gray;
-  border-top:solid 1px white;
-  -webkit-transition: all .2s ease-out;
-  -moz-transition: all .2s ease-out;
-  -o-transition: all .2s ease-out;
-  transition: all .2s ease-out;
-}
-
-#footer > p{
-  float:right;
-  padding-right:50px;
-  margin:34px 0;
-  font-weight: 500;
-  color:white;
+#footer-bottom{
+  width:100%;
+  height:40px;
+  margin:0;
+  background-color:black;
+  opacity:0.9;
 }
