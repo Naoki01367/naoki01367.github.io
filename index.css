@@ -8,10 +8,24 @@ html,body{
   background-color:whitesmoke;
 }
 
+@media screen and ( max-width:479px ){
+  html,body{
+    width:100vh;
+    height:auto;
+  }
+}
+
 #wrapper{
   width:100%;
   height:auto;
   margin:0;
+}
+
+@media screen and ( max-width:479px ){
+  #wrapper{
+    width:100vh;
+    height:auto;
+  }
 }
 
 #contentA{
@@ -27,6 +41,10 @@ html,body{
   position:relative;
   }
   
+@media screen and ( max-width:479px ){
+  #contentA{
+    height:auto;
+  }
 }
 
 #contentA > img{
@@ -41,6 +59,13 @@ html,body{
   height:100vh;
   background-color:rgba(0,0,0,0.7);
   z-index: 3;
+}
+
+@media screen and ( max-width:479px ){
+  #shadow{
+    width:100vh;
+    height:auto;
+  }
 }
 
 #header{
