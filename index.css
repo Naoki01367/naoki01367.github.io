@@ -244,7 +244,7 @@ html,body{
 @media screen and ( max-width:700px ){
   .article > img{
     width:60%;
-    margin:20px 20%;
+    margin:0 20% 20px 20%;
     padding:0;
     float:none;
   }
@@ -317,7 +317,7 @@ html,body{
   .message-title{
     width:100%;
     margin:0;
-    padding:20px 0;
+    padding:0 0 20px 0;
     float:none;
     text-align:center;
   }
@@ -387,7 +387,7 @@ html,body{
   #articleD > h1{
     width:100%;
     margin:0;
-    padding:20px 0;
+    padding:0 0 20px 0;
   }
 }
 
