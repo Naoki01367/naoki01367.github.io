@@ -233,9 +233,9 @@ html,body{
 
 @media screen and ( max-width:700px ){
   .article > img{
-    width:60%;
+    width:80%;
     margin:20px auto;
-    clear:both;
+    float:none;
   }
 }
 
@@ -317,9 +317,9 @@ html,body{
 
 @media screen and ( max-width:700px ){
   .message{
-    width:100%;
-    margin:0;
-    padding:20px 10px;
+    width:80%;
+    margin:0 auto;
+    padding:0 20px;
     float:none;
   }
 }
@@ -384,8 +384,10 @@ html,body{
 
 @media screen and ( max-width:700px ){
   #articleD > p{
-    width:100%;
-    text-align:left;
+    width:80%;
+    margin:0 auto;
+    padding:0 20px;
+    float:none;
   }
 }
 
