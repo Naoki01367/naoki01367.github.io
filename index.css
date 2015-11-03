@@ -402,8 +402,7 @@ html,body{
 ===============================================*/
 @media screen and (max-width:640px){
 #contentA{
-  height:50%;
-  width:auto;
-  overflow:hidden;
+  width:100%;
+  height:auto;
 }
 }
