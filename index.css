@@ -25,9 +25,6 @@ html,body{
   background-size: cover;
   overflow:hidden;
   position:relative;
-  
-  @media screen and (max-width: 640px){
-    width:auto;
   }
   
 }
@@ -398,4 +395,15 @@ html,body{
   margin:0;
   background-color:black;
   opacity:0.9;
+}
+
+/*===============================================
+●smart.css  画面の横幅が640pxまで
+===============================================*/
+@media screen and (max-width:640px){
+#contentA{
+  height:50%;
+  width:auto;
+  overflow:hidden;
+}
 }
