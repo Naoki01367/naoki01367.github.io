@@ -243,8 +243,8 @@ html,body{
 
 @media screen and ( max-width:700px ){
   .article > img{
-    width:80%;
-    margin:0 auto 20px auto;
+    width:60%;
+    margin:20px 20%;
     padding:0;
     float:none;
   }
