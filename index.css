@@ -397,12 +397,32 @@ html,body{
   opacity:0.9;
 }
 
-/*===============================================
-●smart.css  画面の横幅が640pxまで
-===============================================*/
-@media screen and (max-width:640px){
-#contentA{
-  width:100%;
-  height:auto;
+/* iPHone4,iPhone5,iPhone5sのみ */
+@media screen and (min-width: 320px) and (max-width: 374px)
+{
+ #contentA{
+   margin:0 auto;
+   width:100%;
+   height:auto;
+ }
 }
+ 
+/* iPhone6のみ */
+@media screen and (min-width: 375px) and (max-width: 413px)
+{
+  #contentA{
+   margin:0 auto;
+   width:100%;
+   height:auto;
+ }
+}
+ 
+/* iPhone6 Plus ~ ちょっと大きいスマホまで */
+@media screen and (min-width: 414px) and (max-width: 500px)
+{
+  #contentA{
+   margin:0 auto;
+   width:100%;
+   height:auto;
+ }
 }
