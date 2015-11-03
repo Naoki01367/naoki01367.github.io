@@ -24,7 +24,6 @@ html,body{
 @media screen and ( max-width:479px ){
   #wrapper{
     width:100vh;
-    height:auto;
   }
 }
 
@@ -43,7 +42,8 @@ html,body{
   
 @media screen and ( max-width:479px ){
   #contentA{
-    height:auto;
+    margin:0 auto;
+    width:auto;
   }
 }
 
@@ -63,8 +63,8 @@ html,body{
 
 @media screen and ( max-width:479px ){
   #shadow{
-    width:100vh;
-    height:auto;
+    margin:0 auto;
+    width:auto;
   }
 }
 
