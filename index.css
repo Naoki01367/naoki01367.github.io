@@ -429,9 +429,28 @@ html,body{
 /* iPhone6のみ */
 @media screen and (min-width: 375px) and (max-width: 413px)
 {
-  #contentA{
-   margin:0 auto;
-   width:100%;
+ #wrapper{
+   width:100vh;
+   height:auto;
+ } 
+ 
+ #contentA{
+   width:100vh;
+   height:auto;
+ }
+  
+  #contentB{
+   width:100vh;
+   height:auto;
+ }
+  
+  #contentC{
+   width:100vh;
+   height:auto;
+ }
+  
+   #contentD{
+   width:100vh;
    height:auto;
  }
 }
@@ -439,9 +458,28 @@ html,body{
 /* iPhone6 Plus ~ ちょっと大きいスマホまで */
 @media screen and (min-width: 414px) and (max-width: 500px)
 {
-  #contentA{
-   margin:0 auto;
-   width:100%;
+ #wrapper{
+   width:100vh;
+   height:auto;
+ } 
+ 
+ #contentA{
+   width:100vh;
+   height:auto;
+ }
+  
+  #contentB{
+   width:100vh;
+   height:auto;
+ }
+  
+  #contentC{
+   width:100vh;
+   height:auto;
+ }
+  
+   #contentD{
+   width:100vh;
    height:auto;
  }
 }
