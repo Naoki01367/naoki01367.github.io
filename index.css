@@ -353,7 +353,7 @@ html,body{
     width:100%;
     height:auto;
     margin:0;
-    padding:20px 10px;
+    padding:20px 0;
   }
 }
 
@@ -491,6 +491,16 @@ html,body{
   float:right;
 }
 
+@media screen and ( max-width:700px ){
+  .footer-right{
+    width:100%;
+    margin:0;
+    text-align:center;
+    font-family:sans-serif;
+    float:none;
+  }
+}
+
 .footer-left{
   color:silver;
   margin:0;
@@ -498,6 +508,12 @@ html,body{
   font-family:Quicksand;
   font-size:12px;
   letter-spacing:0.2em;
+}
+
+@media screen and ( max-width:700px ){
+  .footer-left{
+    display:none;
+  }
 }
 
 .footer-box{
