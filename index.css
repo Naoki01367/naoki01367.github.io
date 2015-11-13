@@ -245,8 +245,9 @@ html,body{
 
 @media screen and ( max-width:767px ){
   #title > a{
-    width:100%;
+    width:80%;
     font-size:17px;
+    margin:20px auto;
   }
 }
 
