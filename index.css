@@ -7,6 +7,12 @@ html,body{
   color:#696969;
 }
 
+@media screen and ( max-width:767px ){
+  html,body{
+    font-family: Arial, Roboto, “Droid Sans”, “游ゴシック”, YuGothic, “ヒラギノ角ゴ ProN W3”, “Hiragino Kaku Gothic ProN”, “メイリオ”, Meiryo, sans-serif;
+  }
+}
+
 #wrapper{
   margin:0;
   width:100%;
@@ -43,15 +49,33 @@ html,body{
   transition:all 0.5s;
 }
 
+@media screen and ( max-width:767px ){
+  #header{
+    background-color:#333
+  }
+}
+
 #header.scroll{
   position:fixed;
   background-color:#333;
+}
+
+@media screen and ( max-width:767px ){
+  #header.scroll{
+    display:none;
+  }
 }
 
 #headerwidth{
   width:90%;
   height:70px;
   margin:0 auto;
+}
+
+@media screen and ( max-width:767px ){
+  #headerwidth{
+    display:none;
+  }
 }
 
 .logo{
@@ -79,6 +103,19 @@ html,body{
   margin:0;
   padding:0;
   list-style:none;
+}
+
+.slicknav_nav {
+ display:none;
+}
+
+@media screen and ( max-width:767px ){
+  .nav{
+    display:none;
+  }
+  .slicknav_nav {
+    display:block;
+  }
 }
 
 .nav > li{
@@ -138,6 +175,12 @@ html,body{
   z-index:1;
 }
 
+@media screen and ( max-width:767px ){
+  #title{
+    width:60%;
+  }
+}
+
 #title > h2{
   text-align:center;
   margin:0;
@@ -146,6 +189,12 @@ html,body{
   font-size:45px;
   font-weight:400;
   letter-spacing:1px;
+}
+
+@media screen and ( max-width:767px ){
+  #title > h2{
+    font-size:20px;
+  }
 }
 
 #title > h6{
@@ -158,17 +207,22 @@ html,body{
   letter-spacing:1px;
 }
 
+@media screen and ( max-width:767px ){
+  #title > h6{
+    font-size:10px;
+  }
+}
+
 .line{
   width:100px;
   margin:40px auto 30px auto;
   border-bottom:solid 2px #f50;
 }
 
-#title > p{
-  width:350px;
-  font-size:14px;
-  color:silver;
-  margin:60px auto 0 auto;
+@media screen and ( max-width:767px ){
+  .line{
+    width:50px;
+  }
 }
 
 #title > a{
@@ -183,6 +237,14 @@ html,body{
   font-size:20px;
   letter-spacing:0.1em;
   transition:all 0.5s;
+}
+
+@media screen and ( max-width:767px ){
+  #title > a{
+    width:100px;
+    margin:20px auto;
+    font-size:15px;
+  }
 }
 
 #title > a:hover{
@@ -200,6 +262,12 @@ html,body{
   border-bottom:1px solid #E5EAEC;
 }
 
+@media screen and ( max-width:767px ){
+  .ContentWhite{
+    padding:30px 0;
+  }
+}
+
 .ContentSmoke{
   width:100%;
   height:auto;
@@ -207,6 +275,12 @@ html,body{
   padding:100px 0;
   background-color:whitesmoke;
   border-bottom:1px solid #E5EAEC;
+}
+
+@media screen and ( max-width:767px ){
+  .ContentSmoke{
+    padding:30px 0;
+  }
 }
 
 .heading{
@@ -220,6 +294,12 @@ html,body{
   letter-spacing:1px;
 }
 
+@media screen and ( max-width:767px ){
+  .heading{
+    font-size:20px;
+  }
+}
+
 .InnerHeading{
   width:700px;
   margin:40px auto;
@@ -229,12 +309,27 @@ html,body{
   text-align:center;
 }
 
+@media screen and ( max-width:767px ){
+  .InnerHeading{
+    width:80%;
+    font-family: Arial, Roboto, “Droid Sans”, “游ゴシック”, YuGothic, “ヒラギノ角ゴ ProN W3”, “Hiragino Kaku Gothic ProN”, “メイリオ”, Meiryo, sans-serif;
+  }
+}
+
 .content-text{
   width:640px;
   margin:40px auto 0 auto;
   color:#646464;
   font-family: 游ゴシック体, 'Yu Gothic', YuGothic;
   font-size:14px;
+}
+
+@media screen and ( max-width:767px ){
+  .content-text{
+    width:80%;
+    color:black;
+    font-family: Arial, Roboto, “Droid Sans”, “游ゴシック”, YuGothic, “ヒラギノ角ゴ ProN W3”, “Hiragino Kaku Gothic ProN”, “メイリオ”, Meiryo, sans-serif;
+  }
 }
 
 .work-heading{
@@ -247,12 +342,28 @@ html,body{
   letter-spacing:1px;
 }
 
+@media screen and ( max-width:767px ){
+  .work-heading{
+    font-size:20px;
+  }
+}
+
 .work-text{
   width:100%;
   margin:40px auto;
   color:#646464;
   font-family: 游ゴシック体, 'Yu Gothic', YuGothic;
   font-size:14px;
+}
+
+@media screen and ( max-width:767px ){
+  .work-text{
+    width:80%;
+    margin:30px auto;
+    font-size:15px;
+    font-family: Arial, Roboto, “Droid Sans”, “游ゴシック”, YuGothic, “ヒラギノ角ゴ ProN W3”, “Hiragino Kaku Gothic ProN”, “メイリオ”, Meiryo, sans-serif;
+    color:black;
+  }
 }
 
 #profile{
@@ -281,11 +392,26 @@ html,body{
   margin:30px auto;
 }
 
+@media screen and ( max-width:767px ){
+  .article{
+    display:none;
+  }
+}
+
 #ContentLeft{
   width:440px;
   margin:0;
   padding:30px 60px 30px 0;
   float:left;
+}
+
+@media screen and ( max-width:767px ){
+  #ContentLeft{
+    float:none;
+    width:80%;
+    margin:30px auto;
+    padding:0;
+  }
 }
 
 .work{
@@ -295,6 +421,15 @@ html,body{
   margin:0;
   width:700px;
   height:auto;
+}
+
+@media screen and ( max-width:767px ){
+  .work{
+    float:none;
+    width:80%;
+    margin:30px auto;
+    padding:0;
+  }
 }
 
 .work > img{
@@ -312,12 +447,26 @@ html,body{
   box-shadow:0 11px 18px rgba(0,0,0,0.6)
 }
 
+@media screen and ( max-width:767px ){
+  .work:hover img{
+    display:none;
+  }
+}
+
 #skill{
   display: block;
   width:900px;
   height:360px;
   margin:30px auto 0 auto;
   padding:0;
+}
+
+@media screen and ( max-width:767px ){
+  #skill{
+    width:100%;
+    height:auto;
+    margin:0;
+  }
 }
 
 .skill-box{
@@ -328,12 +477,25 @@ html,body{
   float:left;
 }
 
+@media screen and ( max-width:767px ){
+  .skill-box{
+    width:80%;
+    margin:20px auto;
+    float:none;
+  }
+}
+
 .skill-box > img{
   display: block;
   width:150px;
   height:auto;
   margin:30px auto;
+}
 
+@media screen and ( max-width:767px ){
+  .skill-box > img{
+    width:50%;
+  }
 }
 
 .skill-heading{
@@ -351,6 +513,12 @@ html,body{
   font-size:13px;
   font-family: 游ゴシック体, 'Yu Gothic', YuGothic;
   text-align: center;
+}
+
+@media screen and ( max-width:767px ){
+  .skill-text{
+    font-family: Arial, Roboto, “Droid Sans”, “游ゴシック”, YuGothic, “ヒラギノ角ゴ ProN W3”, “Hiragino Kaku Gothic ProN”, “メイリオ”, Meiryo, sans-serif;
+  }
 }
 
 #footer{
@@ -387,6 +555,13 @@ html,body{
   letter-spacing:1px;
 }
 
+@media screen and ( max-width:767px ){
+  .footer-heading{
+    width:auto;
+    font-size:20px;
+  }
+}
+
 .footer-text{
   width:640px;
   margin:40px auto 0 auto;
@@ -394,6 +569,14 @@ html,body{
   font-family: 游ゴシック体, 'Yu Gothic', YuGothic;
   font-size:14px;
   text-align:center;
+}
+
+@media screen and ( max-width:767px ){
+  .footer-text{
+    font-family: Arial, Roboto, “Droid Sans”, “游ゴシック”, YuGothic, “ヒラギノ角ゴ ProN W3”, “Hiragino Kaku Gothic ProN”, “メイリオ”, Meiryo, sans-serif;
+    width:60%;
+    margin:20px auto;
+  }
 }
 
 .fot-btn{
@@ -425,4 +608,10 @@ html,body{
   font-family: 游ゴシック体, 'Yu Gothic', YuGothic;
   font-size:14px;
   text-align: center;
+}
+
+@media screen and ( max-width:767px ){
+  .ft-bt-text{
+    font-family: Arial, Roboto, “Droid Sans”, “游ゴシック”, YuGothic, “ヒラギノ角ゴ ProN W3”, “Hiragino Kaku Gothic ProN”, “メイリオ”, Meiryo, sans-serif;
+  }
 }

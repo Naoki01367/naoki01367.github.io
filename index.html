@@ -4,11 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Naoki Sugiyama</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index5.css">
   <link rel="shortcut icon" href="fav.png" type="image/png">
   <link href="bootstrap.css" rel="stylesheet" type="text/css">
 
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <script src="js/jquery.slicknav.min.js"></script>
 
   <script type="text/javascript">
 $(function(){
@@ -38,6 +40,8 @@ $(function(){
 });
 </script>
 
+
+
 </head>
 <body>
   <div id="wrapper">
@@ -52,7 +56,7 @@ $(function(){
         <li><a href="#vision" class="inside">VISION</a></li>
         <li><a href="#message" class="inside">MESSAGE</a></li>
         <li><a href="#footer" class="inside">CONTACT</a></li>
-        <li><a href="#footer" class="outside">BLOG</a></li>
+        <li><a href="https://shinjin.amebaownd.com/" class="outside" target="_blank">BLOG</a></li>
       </ul>
     </div><!-- headerwidth -->
 
@@ -103,7 +107,7 @@ $(function(){
           音楽業界を中心にコンサート・イベントグッズの企画製造をしているのですが、単に受注を受けて生産するだけでなく、音楽業界出身者が実績に伴うハイセンスな提案を積極的に行う姿勢を表現しました。<br><br>
         生産背景や価格面は掲載せず、パッと見た際のイメージを意識しており、今後製造実績欄が充実してきますと更に改善されていくと思います。</p>
         </div><!-- ContentLeft -->
-      <a href="#" class="work"><img src="ill.png"></a>
+      <a href="http://www.ill-illmatics.co.jp/" class="work" target="_blank"><img src="ill.png"></a>
     </div><!-- ContentSmoke -->
   </div><!-- article -->
 
@@ -153,7 +157,7 @@ $(function(){
         <h1 class="footer-heading">CONTACT</h1>
         <p class="footer-text">お使いのメールアプリケーションが起動します。<br>
         お気軽にお問い合わせください。</p>
-        <a href="#" class="fot-btn">CONTACT ME</a>
+        <a href="mailto:naokisfc32@gmail.com" target="_blank" class="fot-btn">CONTACT ME</a>
       </div><!-- footer-top -->
       <div id="footer-bottom">
           <p class="ft-bt-text">&copy; NAOKI SUGIYAMA  2015</p>
@@ -161,5 +165,12 @@ $(function(){
     </div><!-- footer -->
 
   </div><!-- wrapper -->
+
+  <script>
+$(function(){
+ $('.nav').slicknav();
+});
+</script>
+
 </body>
 </html>
