@@ -4,8 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Naoki Sugiyama</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index5.css">
+  <link rel="shortcut icon" href="fav.png" type="image/png">
+  <link href="bootstrap.css" rel="stylesheet" type="text/css">
+
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
   <script type="text/javascript">
 $(function(){
     $('a[href^=#]').click(function(){
@@ -19,112 +23,140 @@ $(function(){
 });
 </script>
 
+<script>
+$(function(){
+ var header = $('#header')
+ header_offset = header.offset();
+ header_height = header.height();
+  $(window).scroll(function () {
+   if($(window).scrollTop() > header_offset.top + header_height) {
+    header.addClass('scroll');
+   }else {
+    header.removeClass('scroll');
+   }
+  });
+});
+</script>
+
 </head>
 <body>
   <div id="wrapper">
 
-    <div id="contentA">
+    <div id="header">
 
+      <div id="headerwidth">
+      <a href="#wrapper" class="logo"><img src="logo.png"></a>
+      <ul class="nav">
+        <li><a href="#about" class="inside">ABOUT</a></li>
+        <li><a href="#work" class="inside">WORK</a></li>
+        <li><a href="#vision" class="inside">VISION</a></li>
+        <li><a href="#message" class="inside">MESSAGE</a></li>
+        <li><a href="#footer" class="inside">CONTACT</a></li>
+        <li><a href="#footer" class="outside">BLOG</a></li>
+      </ul>
+    </div><!-- headerwidth -->
+
+    </div><!-- header -->
+
+    <div id="TopImage">
       <div id="shadow">
 
-        <div id="header">
-          <div id="headerwidth">
-          <a href="#wrapper" class="logo">PORTFOLIO</a>
-          <ul class="nav">
-            <li><a href="#contentB">ABOUT</a></li>
-            <li><a href="#contentC">MESSAGE</a></li>
-            <li><a href="#contentD">VISION</a></li>
-            <li><a href="#footer">CONTACT</a></li>
-            <li><a href="https://shinjin.amebaownd.com/" target="_blank">BLOG</a></li>
-          </ul>
-        </div><!-- headerwidth -->
-        </div><!-- header -->
-
         <div id="title">
-          <h2>Naoki Sugiyama</h2>
-          <h6>Dear goodpatch. This is my portfolio.</h6>
+          <h2>NAOKI SUGIYAMA</h2>
+          <h6>Dear Goodpatch. This is my Portfolio.</h6>
+          <div class="line"></div><!-- line -->
           <a href="mailto:naokisfc32@gmail.com" target="_blank">GET IN TOUCH</a>
         </div><!-- title -->
 
       </div><!-- shadow -->
+    </div><!-- TopImage -->
 
-    </div><!-- contentA -->
+<div id="about"></div>
+    <div class="ContentWhite">
 
-    <div id="contentB">
+      <h1 class="heading">ABOUT</h1>
+      <p class="InnerHeading">はじめまして。杉山尚樹と申します。<br>
+      Web業界未経験ですが、UI/UXデザイナーを目指しています。</p>
+      <div id="profile">
+        <img src="cap.jpg" class="cap">
+        <img src="glass.jpg" class="glass">
+      </div><!-- profile -->
+      <p class="content-text">神奈川県横浜市出身。1990年2月生まれ。<br>
+    2012年に新卒でエイベックス・グループへ入社。様々なアーティストの音楽パッケージ、コンサートグッズのWebプロモーションに携わる。2015年4月より同社先輩社員と共にコンサートグッズ企画製造会社を創業。本業の傍プログラミングを学びはじめ、ソフトウェア領域におけるコーディングスキル、及びビジネススキルの更なる向上を図るため、キャリアチェンジを志望中。</p>
+<!--
+      <div class="line"></div>
+      <p class="content-text">2012年　　　エイベックス・マーケティング（株）新卒入社<br>
+      2014年　　　エイベックス・ミュージック・クリエイティヴ（株）転籍<br>
+    2015年　　　ILLMATICS（株）副社長就任</p>
+    <div class="line"></div>
+      <p class="content-text">Adobe（Ai / Pr / Ps）2013年〜<br>
+      Code（HTML5 / CSS3 / Ruby(on Rails4)）2015年〜</p> -->
 
+    </div><!-- ContentWhite -->
+
+<div id="work"></div>
+    <div class="ContentSmoke">
       <div class="article">
-        <img src="R1030564.JPG">
-        <p class="pr-p"><strong>杉山尚樹(1990年2月生まれ）。神奈川県横浜市出身。</strong><br>趣味はDTMとダーツと海外旅行。愛読書は「ブラック・マシン・ミュージック」（野田努著）と「自分の中に毒を持て」（岡本太郎著）。2012年に新卒でエイベックス・グループへ入社。様々なアーティストの音楽パッケージ、コンサートグッズのWebプロモーションに携わる。2015年4月より同社先輩社員と共にコンサートグッズ企画製造会社を創業。<br>
-        ▶ Adobe(Ai , Ps , Pr) 2013年〜　▶︎コーディング(HTML , CSS , Ruby on Rails) 2015年〜</p>
+        <div id="ContentLeft">
+          <h1 class="work-heading">WORK</h1>
+          <p class="work-text">在籍している会社のコーポレートサイトをつくりました。<br>
+          音楽業界を中心にコンサート・イベントグッズの企画製造をしているのですが、単に受注を受けて生産するだけでなく、音楽業界出身者が実績に伴うハイセンスな提案を積極的に行う姿勢を表現しました。<br><br>
+        生産背景や価格面は掲載せず、パッと見た際のイメージを意識しており、今後製造実績欄が充実してきますと更に改善されていくと思います。</p>
+        </div><!-- ContentLeft -->
+      <a href="#" class="work"><img src="ill.png"></a>
+    </div><!-- ContentSmoke -->
+  </div><!-- article -->
 
-      </div><!-- article -->
+<div id="vision"></div>
+    <div class="ContentWhite">
+      <h1 class="heading">VISION</h1>
+      <p class="InnerHeading">フロント・バックエンドを横断したデザイン及びエンジニアリングスキルを持ち、<br>Web領域における事業化と成長戦略を立案・実装できるビジネスパーソンを目指します。</p>
+      <div class="line"></div><!-- line -->
+      <div id="skill">
 
-    </div><!-- contentB -->
-
-    <div id="contentC">
-
-      <div class="article">
-        <h1 class="message-title">MESSAGE</h1>
-        <p class="message">ご覧頂きありがとうございます。未経験ではございますが、以下に志望の経緯と想いを書きました。是非ご一読頂ければ幸いです。<br><br>
-        音楽業界ではWebプロモーションを担当し、様々な施策を行って参りました。会社からはPVとCVRを求められましたが、私は単に商品を無理矢理見せたり、買わせようとする宣伝に違和感を感じていました。<br><br>
-        それよりも、商品をもっと魅力的に伝えるにはどうしたらいいか、お客様がストレスなく購入に至るまでの道筋を描けているか。そういったことを形にするため、Adobeツール・マーケティングを独学し、慣例的に行われてきた方法ではなくケースによって品を変え、新しい方法を模索してきました。<br><br>
-        2014年の終わりにECサイトを運営する部署へ配属されました。部内では知名度やバナーのクリック数が課題に挙がっていましたが、私はそれ以前に複雑なページ遷移と乱雑に配置された広告、勝手に再生される告知映像など、サービスがユーザーの目を見ていないことに疑問を感じました。<br><br>
-    私は上司にUI/UXの再設計を行うよう働きかけましたが、その費用対効果について問われ、私は具体的に答えることができませんでした。プロモーションにしてもサービスにしても、重要なのは短期的な予算達成よりも、そのブランドを愛してもらうこと。そのためによりユーザーフレンドリーで、素晴らしい顧客体験を提供することが大切であるということを今も信じており、自分の手で実現したいという一心で初心者ながらプログラミングを学んでおります。<br><br>
-そんなある時、goodpatch様の存在を知りました。デザインの力を信じ、世界を舞台に前進している皆様の姿を見て衝撃を受け、自分もこの一員となり、皆様のミッションに一緒に挑んでいきたいと強く思いました。<br><br>
-現時点で御社にとってメリットのあるスキルがあるとは思えませんが、猛スピードで成長して必ず役に立ちます。未経験からの挑戦ですが、チャンスを頂きたく、応募致しました。是非一度会ってお話させて頂きたいです。何卒宜しくお願い申し上げます。</p>
-      </div><!-- article -->
-
-    </div><!-- contentC -->
-
-    <div id="contentD">
-
-      <div id="articleD">
-        <h1>VISION</h1>
-        <p><strong>フロント・バックエンドを横断したデザイン及びエンジニアリングスキルを持ち、Web領域における事業化と成長戦略を立案・実装できるビジネスパーソンを目指します。</strong><br><br>
-        まずは1年間でキャッチアップし、3年目までにデザイン領域のプロフェッショナルを目指します。<br>
-      その後事業開発を通して自己成長と共にgoodpatchのミッションに貢献します。</p>
         <div class="skill-box">
-          <img src="pro.png">
-          <p>アイデアをスピーディーに形にするプロトタイピングスキル。新しいサービスやアプリケーションを次々に生み出していきたい。</p>
+          <img src="pr.png">
+          <p class="skill-heading">PROTOTYPING</p>
+          <p class="skill-text">アイデアをスピーディーに形にするプロトタイピングスキル。新しいサービスやアプリケーションを次々に生み出していきたい。</p>
+
         </div><!-- skill-box -->
         <div class="skill-box">
-          <img src="de.png">
-          <p>最良のUXを設計し、それに伴う最適なUIを実装するデザイン及びコーディングスキルにおいてプロフェッショナルを目指します。</p>
+          <img src="des.png">
+          <p class="skill-heading">DESIGN</p>
+          <p class="skill-text">最良のUXを設計し、それに伴う最適なUIを実装するデザイン及びコーディングスキルにおいてプロフェッショナルを目指します。</p>
+
         </div><!-- skill-box -->
         <div class="skill-box">
-          <img src="gro.png">
-          <p>サービスの成長戦略を設計し、マーケティング及びデータ・技術的視点からグロースさせるスキルを身につけたい。</p>
+          <img src="gr.png">
+          <p class="skill-heading">GROWTH</p>
+          <p class="skill-text">サービスの成長戦略を設計し、マーケティング及びデータ・技術的視点からグロースさせるスキルを身につけたい。</p>
+
         </div><!-- skill-box -->
-      </div><!-- articleD -->
 
-    </div><!-- contentD -->
+      </div><!-- skill -->
 
+    </div><!-- ContentWhite -->
+
+<div id="message"></div>
+    <div class="ContentSmoke">
+      <h1 class="heading">MESSAGE</h1>
+      <p class="InnerHeading">体験と感情をデザインして、血の通ったサービスをつくりたい。</p>
+      <div class="line"></div><!-- line -->
+      <p class="content-text">前職ではWeb領域のプロモーションを担当しておりましたが、消費者に無理やり商品を訴求したり、ただ購買を促すようなやり方に限界を感じていました。<br><br>プロモーションの分野において重要なのは、その情報に触れた消費者がどう感じるか。購買意欲そのものを沸き立たせたり、ブランドに対してポジティブな印象を与えるものであるべきで、そのクリエイティヴには最大限こだわり抜くべきです。<br><br>
+      ECサイトを担当した際、同じことを感じました。もっとユーザーフレンドリーで、素晴らしい購買体験を提供するため、徹底的に消費者の体験にフォーカスするべきだと思いました。自分の手でそれを実現したい一心で、初心者ながらプログラミングを学んでおります。<br><br>
+    まだスキルは初歩ですが、マインドの合うチームのもとで猛烈に成長したいです。</p>
+    </div><!-- ContentWhite -->
+
+<div id="footer"></div>
     <div id="footer">
-
       <div id="footer-top">
-        <div id="foonter-top-article">
-          <div class="footer-boxA">
-            <h3 class="footer-heading">HISTORY</h3>
-            <p>1990年2月　　　和歌山県の病院で産まれる<br>
-              2012年3月　　　成城大学経済学部経営学科卒業<br>
-              2012年4月　　　エイベックス・マーケティング(株)<br>
-              2014年7月　　　エイベックス・ミュージック・クリエイティヴ(株)<br>
-              2015年3月　　　エイベックス退社<br>
-              2015年4月　　　アイルマティクス(株)副社長就任</p>
-          </div><!-- footer-boxA -->
-          <div class="footer-boxB">
-            <h3 class="footer-heading">CONTACT</h3>
-            <p class="en">MAIL<br><a href="mailto:naokisfc32@gmail.com" target="_blank">naokisfc32@gmail.com</a><br>
-          BLOG<br><a href="https://shinjin.amebaownd.com/" target="_blank">https://shinjin.amebaownd.com/</a></p>
-          </div><!-- footer-boxB -->
-        </div><!-- footer-top-article -->
+        <h1 class="footer-heading">CONTACT</h1>
+        <p class="footer-text">お使いのメールアプリケーションが起動します。<br>
+        お気軽にお問い合わせください。</p>
+        <a href="#" class="fot-btn">CONTACT ME</a>
       </div><!-- footer-top -->
-
       <div id="footer-bottom">
-        <div id="footer-bottom-article">
-          <p class="footer-right">Copyright &copy; 2015 naoki sugiyama. All Rights Reserved.</p>
-          <p class="footer-left">PORTFOLIO</p>
-        </div><!-- footer-bottom-article -->
+          <p class="ft-bt-text">&copy; NAOKI SUGIYAMA  2015</p>
       </div><!-- footer-bottom -->
     </div><!-- footer -->
 
