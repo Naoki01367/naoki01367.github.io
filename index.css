@@ -454,12 +454,6 @@ html,body{
   box-shadow:0 11px 18px rgba(0,0,0,0.6)
 }
 
-@media screen and ( max-width:767px ){
-  .work:hover img{
-    display:none;
-  }
-}
-
 #skill{
   display: block;
   width:900px;
