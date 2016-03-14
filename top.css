@@ -208,6 +208,12 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   letter-spacing:5px;
 }
 
+@media screen and ( max-width:479px ){
+  .title > h2{
+    font-size:24px;
+  }
+}
+
 .title > h6{
   color:#f3f3f3;
   margin:0 auto;
@@ -216,6 +222,12 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   font-size:21px;
   font-weight:lighter;
   -webkit-font-smoothing: antialiased;
+}
+
+@media screen and ( max-width:479px ){
+  .title > h6{
+    font-size:16px;
+  }
 }
 
 #btn-area{
