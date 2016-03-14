@@ -38,9 +38,9 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   transition:0.5s;
 }
 
-@media screen and ( max-width:479px ){
+@media screen and (max-width: 480px){
   #header{
-    display:none;
+    display: none;
   }
 }
 
@@ -156,28 +156,19 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   z-index:0;
 }
 
-@media screen and ( max-width:479px ){
+@media screen and (max-width: 480px){
   #topimage{
-    width:100%;
-    height:100vh;
     position:absolute;
   }
 }
 
-.shadow,.shadow-blue{
+.shadow,.shadow-blue,.overlay{
   height: 100%;
   min-height: 400px;
   z-index: 2;
 }
 
-@media screen and ( max-width:479px ){
-  .shadow,.shadow-blue{
-    width:100%;
-    min-height:200px;
-  }
-}
-
-.shadow{
+.shadow,.overlay{
   background-color: rgba(0,0,0,0.6);
 }
 
@@ -194,7 +185,7 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   text-align:center;
 }
 
-@media screen and ( max-width:479px ){
+@media screen and (max-width: 480px){
   .title{
     width:80%;
     height:50%;
@@ -209,7 +200,7 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   letter-spacing:5px;
 }
 
-@media screen and ( max-width:479px ){
+@media screen and (max-width: 480px){
   .title > h2{
     font-size:24px;
   }
@@ -225,9 +216,9 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   -webkit-font-smoothing: antialiased;
 }
 
-@media screen and ( max-width:479px ){
+@media screen and (max-width: 480px){
   .title > h6{
-    font-size:12px;
+    font-size:16px;
   }
 }
 
@@ -237,7 +228,7 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   margin:0 auto;
 }
 
-@media screen and ( max-width:479px ){
+@media screen and (max-width: 480px){
   #btn-area{
     width:200px;
   }
@@ -265,10 +256,10 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   float:left;
 }
 
-@media screen and ( max-width:479px ){
+@media screen and (max-width: 480px){
   .btn-blue{
-    float:none;
     margin:30px auto;
+    float:none;
     border-radius:20px;
   }
 }
@@ -280,9 +271,9 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   float:left;
 }
 
-@media screen and ( max-width:479px ){
+@media screen and (max-width: 480px){
   .btn-white{
-    display:none;
+    display: none;
   }
 }
 
@@ -363,11 +354,11 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   box-sizing: border-box;
 }
 
-@media screen and ( max-width:479px ){
+@media screen and (max-width: 480px){
   .content-section-text{
-    width:70%;
-    padding:20px 0;
+    width:80%;
     margin:0 auto;
+    padding:20px 0;
   }
 }
 
@@ -382,7 +373,13 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   display: block;
 }
 
-.content-harf{
+@media screen and (max-width: 480px){
+  .content-section-wrap{
+    height:auto
+  }
+}
+
+.content-left,.content-right{
   width:50%;
   min-height:300px;
   height:auto !important;
@@ -395,6 +392,26 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   float:left;
   vertical-align: middle;
 }
+
+@media screen and (max-width: 480px){
+  .content-left,.content-right{
+    width:100%;
+    min-height:200px;
+    height:auto;
+    margin:0 auto;
+    float:none;
+    padding:0;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .content-right{
+    margin-bottom:70px;
+    border-bottom:1px solid #f3f3f3;
+  }
+}
+
+
 
 
 .footer{
@@ -462,10 +479,10 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   margin:30px auto;
 }
 
-
-@media screen and ( max-width:479px ){
-  width:80%;
-  margin:20px auto;
+@media screen and (max-width: 480px){
+  .mbp{
+    width:80%;
+  }
 }
 
 .center-line{
@@ -493,8 +510,7 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   padding:0;
 }
 
-
-@media screen and ( max-width:479px ){
+@media screen and (max-width: 480px){
   #content-service{
     width:80%;
   }
@@ -510,29 +526,22 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   box-sizing: border-box;
 }
 
-@media screen and ( max-width:479px ){
-  .service-col,.service-col-wide{
-    float:none;
-  }
-}
 
 .service-col{
   width:33.3%;
-}
-
-@media screen and ( max-width:479px ){
-  .service-col{
-    width:80%;
-  }
 }
 
 .service-col-wide{
   width:33.4%;
 }
 
-@media screen and ( max-width:479px ){
-  .service-col-wide{
-    width:80%;
+
+@media screen and (max-width: 480px){
+  .service-col,.service-col-wide{
+    float:none;
+    padding:0;
+    width:100%;
+    margin-bottom:50px;
   }
 }
 
@@ -543,14 +552,6 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   margin:0 auto;
   padding-bottom:10px;
 }
-
-@media screen and ( max-width:479px ){
-  .service-image{
-    width:80%;
-  }
-}
-
-
 
 /* JOIN　*/
 
@@ -565,7 +566,14 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 
 .price-img{
   display:table-cell;
-  width:90%;
+  width:80%;
+}
+
+
+@media screen and (max-width: 480px){
+  .price-img{
+    width:100%;
+  }
 }
 
 
