@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>EXPERIMENT. | 東京都のクリエイティブ・エージェンシー</title>
-  <meta content="Qiita - XXX" name="title">
+  <link rel="stylesheet" href="top.css">
+  <link rel="icon" href="images/favicon.png">
   <meta content="EXPERIMENT.（エクスペリメント）は東京都を中心に活動するクリエイティブ・エージェンシーです。紙媒体・Webサイトのデザインから印刷・製造・サイト制作まで行っております。" name="description">
   <meta content='エクスペリメント,EXPERIMENT,えくすぺりめんと,Web,ウェブ制作,ホームページ制作,デザイン,名刺,ノベルティ' name='keywords'>
   <meta property="og:type" content="website"/>
@@ -11,9 +12,8 @@
   <meta property="og:description" content="EXPERIMENT.（エクスペリメント）は東京都を中心に活動するクリエイティブ・エージェンシーです。紙媒体・Webサイトのデザインから印刷・製造・サイト制作まで行っております。" />
   <meta property="og:url" content="http://" />
   <meta property="og:site_name" content="EXPERIMENT."/>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="top.css">
-  <link rel="icon" href="favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
 
@@ -39,7 +39,7 @@
 
 <!-- - - - - - - - - - - TOPIMGE- - - - - - - - - - - -->
     <div id="topimage">
-      <div class="shadow">
+      <div class="overlay">
         <div class="title">
           <h2>WE'LL HELP YOUR BUSINESS</h2>
           <h6>Graphic &amp; Web design , Manufacturing , Printing</h6>
@@ -51,7 +51,7 @@
           </div><!-- btn-area -->
 
         </div><!-- title -->
-      </div><!-- shadow -->
+      </div><!-- overlay -->
     </div><!-- topimage -->
 <!-- - - - - - - - - - - TOPIMAGE-END - - - - - - - - - - - -->
 
@@ -140,11 +140,11 @@
 
         <!-- price-box　-->
         <div class="content-section-wrap">
-          <div class="content-harf">
+          <div class="content-left">
             <img src="images/web-d.png" class="price-img">
           </div><!-- harf -->
 
-          <div class="content-harf">
+          <div class="content-right">
             <p class="content-title-left">WEB制作</p>
             <p class="content-text-left">個人・法人問わず、お客様のご要望とEXPERIMENT.のデザインメソッドを掛け合わせたWEBサイト制作を承ります。レスポンシブ対応、CMS導入、納品後のサポートまでお任せください。価格は実装内容によって大きく変動しますので、事前に入念なヒアリングを実施致します。</p>
             <p class="content-text-price">WEB制作：約15万円〜　保守・運用：約5,000円／月〜</di>
@@ -153,11 +153,11 @@
         </div><!-- content-section-wrap -->
 
         <div class="content-section-wrap">
-          <div class="content-harf">
+          <div class="content-left">
             <img src="images/biz-card.png" class="price-img">
           </div><!-- harf -->
 
-          <div class="content-harf">
+          <div class="content-right">
             <p class="content-title-left">グラフィックデザイン</p>
             <p class="content-text-left">名刺・ポスター・フライヤー・POP・雑誌・WEB広告などあらゆる分野のグラフィックデザインをご提案致します。価格はページ数等に対する作業工数を計算の上お見積もりしております。また、月額契約も受け付けております。</p>
             <p class="content-text-price">デザイン：約2万円〜　月額契約：要相談</di>
@@ -166,11 +166,11 @@
         </div><!-- content-section-wrap -->
 
         <div class="content-section-wrap">
-          <div class="content-harf">
+          <div class="content-left">
             <img src="images/shirts.png" class="price-img">
           </div><!-- harf -->
 
-          <div class="content-harf">
+          <div class="content-right">
             <p class="content-title-left">印刷・ノベルティグッズ製造</p>
             <p class="content-text-left">デザインとセットでご注文の方はお得なパッケージとして割引をさせて頂いております。フライヤーや名刺等に加え、クリアファイル等のオフィスアイテム、Tシャツやその他アクセサリーなどのグッズ製造もお任せください。主にメジャーアーティストのコンサートグッズの製造実績を持っております。</p>
             <p class="content-text-price">印刷・製造：要相談</di>
@@ -246,11 +246,11 @@ $(function(){
 </script>
 
 <script>
-$('.mbp,#content-service,.content-harf').css('visibility','hidden');
+$('.mbp,#content-service,.content-left,.content-right').css('visibility','hidden');
 $(window).scroll(function(){
  var windowHeight = $(window).height(),
      topWindow = $(window).scrollTop();
- $('.mbp,#content-service,.content-harf').each(function(){
+ $('.mbp,#content-service,.content-left,.content-right').each(function(){
   var targetPosition = $(this).offset().top;
   if(topWindow > targetPosition - windowHeight + 200){
    $(this).addClass("fadeInDown");
