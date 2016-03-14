@@ -237,6 +237,12 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   margin:0 auto;
 }
 
+@media screen and ( max-width:479px ){
+  #btn-area{
+    width:250px;
+  }
+}
+
 .btn-blue,.btn-white,.btn-contact{
   display: block;
   width: 200px;
