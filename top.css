@@ -266,9 +266,10 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 }
 
 @media screen and ( max-width:479px ){
-  .btn-blue,.btn-white;{
+  .btn-blue;{
     float:none;
     margin:10px auto;
+    border-radius:10px;
   }
 }
 
@@ -277,6 +278,12 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   box-sizing: border-box;
   border:1px solid #fff;
   float:left;
+}
+
+@media screen and ( max-width:479px ){
+  .btn-white;{
+    display:none;
+  }
 }
 
 .btn-contact{
