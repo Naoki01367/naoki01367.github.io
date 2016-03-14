@@ -266,10 +266,10 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 }
 
 @media screen and ( max-width:479px ){
-  .btn-blue;{
+  .btn-blue{
     float:none;
-    margin:10px auto;
-    border-radius:10px;
+    margin:30px auto;
+    border-radius:20px;
   }
 }
 
@@ -281,7 +281,7 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 }
 
 @media screen and ( max-width:479px ){
-  .btn-white;{
+  .btn-white{
     display:none;
   }
 }
@@ -364,8 +364,10 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 }
 
 @media screen and ( max-width:479px ){
-  .content-section-text;{
-    padding:20px;
+  .content-section-text{
+    width:70%;
+    padding:20px 0;
+    margin:0 auto;
   }
 }
 
