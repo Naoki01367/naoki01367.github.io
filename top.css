@@ -226,7 +226,7 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 
 @media screen and ( max-width:479px ){
   .title > h6{
-    font-size:16px;
+    font-size:12px;
   }
 }
 
@@ -256,6 +256,12 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   background-color:rgb(64, 139, 153);
   border:1px solid rgb(64, 139, 153);
   float:left;
+}
+
+@media screen and ( max-width:479px ){
+  .btn-blue,.btn-white;{
+    clear:both;
+  }
 }
 
 .btn-white{
