@@ -698,9 +698,9 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 
 .content-left,.content-right{
   width:100%;
-  min-height:500px;
+  min-height:300px;
   height:auto !important;
-  height:500px;
+  height:300px;
   padding:0;
   margin:0;
   -webkit-box-sizing: border-box;
