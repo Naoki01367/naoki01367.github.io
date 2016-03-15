@@ -541,7 +541,8 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   height: 100vh;
   background-image:url(images/cover.jpg);
   background-size: cover;
-  position:fixed;
+  background-position: center center;
+  position:absolute;
   top:0;
   z-index:0;
 }
@@ -566,6 +567,14 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   margin: auto auto;
   width: 80%;
   text-align:center;
+}
+
+.title-top{
+  height:50%;
+}
+
+.title{
+  height:80%;
 }
 
 .title-top > h2,.title >h2{
@@ -648,6 +657,7 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 
 .content-resp,.contetnt-join{
   background-size: cover;
+  background-position: center center;
   min-height: 600px;
   padding:0;
   position: relative;
