@@ -688,7 +688,7 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 .content-section-wrap{
   width:80%;
   margin:0 auto;
-  height:400px;
+  height:auto;
   padding:0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -697,11 +697,11 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 }
 
 .content-left,.content-right{
-  width:80%;
+  width:100%;
   min-height:300px;
   height:auto !important;
   height:300px;
-  padding:50px 0;
+  padding:0;
   margin:0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -794,7 +794,7 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 .service-col,.service-col-wide{
   width:100%;
   height:auto;
-  margin:0;
+  margin-bottom:30px;
   padding:0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -859,9 +859,9 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 
 
 .fadeInDown {
-  -webkit-animation-duration:1s;
-  -ms-animation-duration:1s;
-  animation-duration:1s;
+  -webkit-animation-duration:0.5s;
+  -ms-animation-duration:0.5s;
+  animation-duration:0.5s;
  -webkit-animation-name: fadeInDown;
  animation-name: fadeInDown;
  visibility: visible !important;
