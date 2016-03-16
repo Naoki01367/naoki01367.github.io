@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>EXPERIMENT. | 東京都のクリエイティブ・エージェンシー</title>
   <link rel="stylesheet" href="top.css">
+  <link rel="stylesheet" href="slicknav.css" />
   <link rel="icon" href="images/favicon.png">
   <meta content="EXPERIMENT.（エクスペリメント）は東京都を中心に活動するクリエイティブ・エージェンシーです。紙媒体・Webサイトのデザインから印刷・製造・サイト制作まで行っております。" name="description">
   <meta content='エクスペリメント,EXPERIMENT,えくすぺりめんと,Web,ウェブ制作,ホームページ制作,デザイン,名刺,ノベルティ' name='keywords'>
@@ -27,7 +28,7 @@
 <!-- - - - - - - - - - - HEADER - - - - - - - - - - - -->
     <div id="header">
 
-      <a href="#" class="logo">EXPERIMENT.</a>
+      <a href="#wrapper" class="logo">EXPERIMENT.</a>
 
       <ul>
         <li><a href="#wrapper" class="nav">TOP</a></li>
@@ -158,26 +159,26 @@
         <div class="content-section-wrap">
           <div class="content-left">
             <img src="images/biz-card.png" class="price-img">
-          </div><!-- harf -->
+          </div><!-- content-left -->
 
           <div class="content-right">
             <p class="content-title-left">グラフィックデザイン</p>
             <p class="content-text-left">名刺・ポスター・フライヤー・POP・雑誌・WEB広告などあらゆる分野のグラフィックデザインをご提案致します。価格はページ数等に対する作業工数を計算の上お見積もりしております。また、月額契約も受け付けております。</p>
             <p class="content-text-price">デザイン：約2万円〜　月額契約：要相談</di>
-          </div><!-- harf -->
+          </div><!-- content-right -->
 
         </div><!-- content-section-wrap -->
 
         <div class="content-section-wrap">
           <div class="content-left">
             <img src="images/shirts.png" class="price-img">
-          </div><!-- harf -->
+          </div><!-- content-left -->
 
           <div class="content-right">
             <p class="content-title-left">印刷・ノベルティグッズ製造</p>
             <p class="content-text-left">デザインとセットでご注文の方はお得なパッケージとして割引をさせて頂いております。フライヤーや名刺等に加え、クリアファイル等のオフィスアイテム、Tシャツやその他アクセサリーなどのグッズ製造もお任せください。主にメジャーアーティストのコンサートグッズの製造実績を持っております。</p>
             <p class="content-text-price">印刷・製造：要相談</di>
-          </div><!-- harf -->
+          </div><!-- content-right -->
 
         </div><!-- content-section-wrap -->
 
@@ -228,8 +229,9 @@
   </div><!-- wrapper -->
 
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="js/jquery.slicknav.min.js"></script>
-  <script src="js/jquery.scrollslide.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+  <script src="jquery.slicknav.min.js"></script>
+  <script src="jquery.scrollslide.js"></script>
 
 
 <!-- headerスクロール -->
@@ -245,6 +247,12 @@ $(function(){
     header.removeClass('scroll');
    }
   });
+});
+</script>
+
+<script>
+jQuery(function($){
+  $('#header').slicknav();
 });
 </script>
 
