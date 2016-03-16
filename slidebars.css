@@ -1,0 +1,68 @@
+/*!
+ * Slidebars
+ * Description: A jQuery framework for off-canvas menus and sidebars.
+ * Version: Development
+ * URL: http://plugins.adchsm.me/slidebars/
+ * Author: Adam Smith - http://www.adchsm.me/
+ * License: MIT - http://opensource.org/licenses/MIT
+ */
+
+ .sb-slidebar{
+    color:#fff;
+    padding:0px;
+}
+#sp-header{
+    width:100%;
+    background:#fff;
+    height:54px;
+    position:fixed;
+    top:0;
+    z-index: 999;
+}
+#sp-header h1{
+    text-align:center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color:#222222;
+    font-family:'ITC Avant Garde Gothic','san-serif';
+    font-size:21px;
+    font-weight:bold;
+}
+.sb-toggle-left{
+    position:absolute;
+    top:0;
+    left:0;
+}
+.navi a{
+    color:#333;
+    display:block;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    text-decoration:none;
+    font-weight:bolder;
+}
+.navi a:after{
+    content:"☰"
+}
+.sb-active .navi a:after{
+    content:"×"
+}
+.menu{
+    list-style:none;
+    background:#666;
+}
+.menu li{
+    border-bottom:#CCC solid 1px;
+    padding:10px;
+}
+
+/*
+.sb-slidebar h2{
+    font-size:14px;
+    padding:0 0 0 10px;
+    height:40px;
+    line-height:40px;
+} */
