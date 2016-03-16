@@ -33,9 +33,9 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   display: none;
 }
 
-.sb-slidebar sb-left sb-style-push{
-  display:none;
-}
+ .sb-slidebar{
+   display: none;
+ }
 
 #header{
   height:140px;
