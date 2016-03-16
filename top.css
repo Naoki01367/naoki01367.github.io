@@ -42,6 +42,10 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   transition:0.5s;
 }
 
+.slicknav_menu {
+  display: none;
+}
+
 #header.scroll{
   height:80px;
   background-color:#fff;
