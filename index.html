@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>EXPERIMENT. | 東京都のクリエイティブ・エージェンシー</title>
   <link rel="stylesheet" href="top.css">
-  <link rel="stylesheet" href="slicknav.css" />
+  <link rel="stylesheet" href="slidebars.css" />
   <link rel="icon" href="images/favicon.png">
   <meta content="EXPERIMENT.（エクスペリメント）は東京都を中心に活動するクリエイティブ・エージェンシーです。紙媒体・Webサイトのデザインから印刷・製造・サイト制作まで行っております。" name="description">
   <meta content='エクスペリメント,EXPERIMENT,えくすぺりめんと,Web,ウェブ制作,ホームページ制作,デザイン,名刺,ノベルティ' name='keywords'>
@@ -31,7 +31,6 @@
       <a href="#wrapper" class="logo">EXPERIMENT.</a>
 
       <ul>
-        <li><a href="#wrapper" class="nav">TOP</a></li>
         <li><a href="#about" class="nav">ABOUT</a></li>
         <li><a href="#service" class="nav">SERVICE</a></li>
         <li><a href="#price" class="nav">PRICE</a></li>
@@ -40,6 +39,29 @@
 
     </div><!-- header -->
 <!-- - - - - - - - - - - HEADER-END - - - - - - - - - - - -->
+
+
+<!-- - - - - - - - - - - SP HEADER - - - - - - - - - - - -->
+
+<div id="sp-header">
+  <h1>EXPERIMENT.</h1>
+  <ul class="navi">
+    <li class="sb-toggle-left">
+      <a href="#"></a>
+    </li>
+  </ul>
+</header>
+</div>
+<div class="sb-slidebar sb-left sb-style-push">
+<h2>MENU</h2>
+<ul class="menu">
+  <li>ABOUT</li>
+  <li>SERVICE</li>
+  <li>PRICE</li>
+  <li>CONTACT</li>
+</ul>
+
+<!-- - - - - - - - - - - SP HEADER-END - - - - - - - - - - - -->
 
 <!-- - - - - - - - - - - TOPIMGE- - - - - - - - - - - -->
     <div id="topimage">
@@ -232,6 +254,7 @@
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
   <script src="jquery.slicknav.min.js"></script>
   <script src="jquery.scrollslide.js"></script>
+  <script src="slidebars.js"></script>
 
 
 <!-- headerスクロール -->
@@ -251,10 +274,13 @@ $(function(){
 </script>
 
 <script>
-jQuery(function($){
-  $('#header').slicknav();
-});
+  (function($) {
+    $(document).ready(function() {
+      $.slidebars();
+    });
+  }) (jQuery);
 </script>
+
 
 <script>
 $('.mbp,#content-service,.content-left,.content-right').css('visibility','hidden');
