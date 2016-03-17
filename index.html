@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <title>EXPERIMENT. | 東京都のクリエイティブ・エージェンシー</title>
   <link rel="stylesheet" href="top.css">
-  <link rel="stylesheet" href="slidebars.min.css">
   <link rel="icon" href="images/favicon.png">
   <meta content="EXPERIMENT.（エクスペリメント）は東京都を中心に活動するクリエイティブ・エージェンシーです。紙媒体・Webサイトのデザインから印刷・製造・サイト制作まで行っております。" name="description">
   <meta content='エクスペリメント,EXPERIMENT,えくすぺりめんと,Web,ウェブ制作,ホームページ制作,デザイン,名刺,ノベルティ' name='keywords'>
@@ -23,19 +22,17 @@
 
 <body>
 
-
-<!-- - - - - - - - - - - SP-HEADER - - - - - - - - - - - -->
-  <div id="sp-header">
-    <h1>ドロワーメニューサンプル</h1>
-    <ul class="navi">
-      <li class="sb-toggle-right">
-        <a href="#"></a>
-      </li>
-    </ul>
-  </div>
-<!-- - - - - - - - - - - SP-HEADER-END - - - - - - - - - - - -->
-
 <div id="sb-site">
+<!-- - - - - - - - - - - SP-HEADER - - - - - - - - - - - -->
+<header>
+  <h1>ドロワーメニューサンプル</h1>
+  <ul class="navi">
+    <li class="sb-toggle-right">
+      <a href="#"></a>
+    </li>
+  </ul>
+</header>
+<!-- - - - - - - - - - - SP-HEADER-END - - - - - - - - - - - -->
 
 <!-- - - - - - - - - - - HEADER - - - - - - - - - - - -->
     <div id="header">
@@ -239,8 +236,6 @@
   </div><!-- content-wrap -->
 </div><!-- sb-site -->
 
-<!-- - - - - - - - - - - CONTENT-AREA-END - - - - - - - - - - - -->
-
 <div class="sb-slidebar sb-right sb-style-push">
   <h2>左メニューの内容</h2>
   <ul class="menu">
@@ -252,24 +247,11 @@
   </ul>
 </div>
 
+<!-- - - - - - - - - - - CONTENT-AREA-END - - - - - - - - - - - -->
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
-
-
-  <script>
-  $(function(){
-     $('a[href^=#]').click(function() {
-        var speed = 700;
-        var href= $(this).attr("href");
-        var target = $(href == "#" || href == "" ? 'html' : href);
-        var position = target.offset().top - 30;
-        $('body,html').animate({scrollTop:position}, speed, 'swing');
-        return false;
-     });
-  });
-  </script>
 
   <script>
   function calcParallax(tileheight, speedratio, scrollposition) {
@@ -292,47 +274,56 @@
 
 
 
-<script>
-$(function(){
- var header = $('#header')
- header_offset = header.offset();
- header_height = header.height();
-  $(window).scroll(function () {
-   if($(window).scrollTop() > 500) {
-    header.addClass('scroll');
-   }else {
-    header.removeClass('scroll');
-   }
+  <script>
+  $(function(){
+   var header = $('#header')
+   header_offset = header.offset();
+   header_height = header.height();
+    $(window).scroll(function () {
+     if($(window).scrollTop() > 500) {
+      header.addClass('scroll');
+     }else {
+      header.removeClass('scroll');
+     }
+    });
   });
-});
-</script>
+  </script>
 
 
-<!-- scrollslide -->
-<script src="jquery.scrollslide.js"></script>
-<script>
-$('.mbp,#content-service,.content-left,.content-right').css('visibility','hidden');
-$(window).scroll(function(){
- var windowHeight = $(window).height(),
-     topWindow = $(window).scrollTop();
- $('.mbp,#content-service,.content-left,.content-right').each(function(){
-  var targetPosition = $(this).offset().top;
-  if(topWindow > targetPosition - windowHeight + 200){
-   $(this).addClass("fadeInDown");
- }
- });
-});
-</script>
+  <!-- scrollslide -->
+  <script src="jquery.scrollslide.js"></script>
+  <script>
+  $('.mbp,#content-service,.content-left,.content-right').css('visibility','hidden');
+  $(window).scroll(function(){
+   var windowHeight = $(window).height(),
+       topWindow = $(window).scrollTop();
+   $('.mbp,#content-service,.content-left,.content-right').each(function(){
+    var targetPosition = $(this).offset().top;
+    if(topWindow > targetPosition - windowHeight + 200){
+     $(this).addClass("fadeInDown");
+   }
+   });
+  });
+  </script>
 
-<!-- slidebars-->
-<script src="slidebars.min.js"></script>
-<script>
-        (function($) {
-            $(document).ready(function() {
-                $.slidebars();
-            });
-        }) (jQuery);
-    </script>
+  <!-- smoothScroll -->
+  <script src="jquery.smooth-scroll.min.js"></script>
+  <script>
+  jQuery(function() {
+    'use strict';
+    jQuery('a').smoothScroll({speed: 700});
+  });
+  </script>
+
+  <!-- Slidebars -->
+  <script src="slidebars.min.js"></script>
+  <script>
+    (function($) {
+      $(document).ready(function() {
+        $.slidebars();
+      });
+    }) (jQuery);
+  </script>
 
 </body>
 </html>
