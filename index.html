@@ -27,6 +27,16 @@
 
   <div id="sb-site">
 
+<!-- - - - - - - - - - - SP-HEADER - - - - - - - - - - - -->
+  <div id="sp-header">
+    <h1>ドロワーメニューサンプル</h1>
+    <ul class="navi">
+      <li class="sb-toggle-right">
+        <a href="#"></a>
+      </li>
+    </ul>
+  </div>
+    <!-- - - - - - - - - - - SP-HEADER-END - - - - - - - - - - - -->
 
 <!-- - - - - - - - - - - HEADER - - - - - - - - - - - -->
     <div id="header">
@@ -42,17 +52,6 @@
 
     </div><!-- header -->
 <!-- - - - - - - - - - - HEADER-END - - - - - - - - - - - -->
-
-<!-- - - - - - - - - - - SP-HEADER - - - - - - - - - - - -->
-<div id="sp-header">
-  <h1>ドロワーメニューサンプル</h1>
-  <ul class="navi">
-    <li class="sb-toggle-right">
-      <a href="#"></a>
-    </li>
-  </ul>
-</div>
-<!-- - - - - - - - - - - SP-HEADER-END - - - - - - - - - - - -->
 
 
 <!-- - - - - - - - - - - TOPIMGE- - - - - - - - - - - -->
@@ -256,12 +255,43 @@
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
-  <script src="jquery.slicknav.min.js"></script>
-  <script src="jquery.scrollslide.js"></script>
+
+  <script>
+  $(function(){
+     $('a[href^=#]').click(function() {
+        var speed = 700;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top - 30;
+        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        return false;
+     });
+  });
+  </script>
+
+  <script>
+  function calcParallax(tileheight, speedratio, scrollposition) {
+    return ((tileheight) - (Math.floor(scrollposition / speedratio) % (tileheight+1)));
+  }
+
+  window.onload = function() {
+
+    window.onscroll = function() {
+      var posY = (document.documentElement.scrollTop) ? document.documentElement.scrollTop : window.pageYOffset;
+
+      var firstWrapping = document.getElementById('firstWrapping');
+      var firstWrappingparallax = calcParallax(1000, 5, posY);
+      firstWrapping.style.backgroundPosition = "0 " + firstWrappingparallax + "px";
+
+    }
+
+  }
+  </script>
 
 
-<!-- headerスクロール -->
+
 <script>
 $(function(){
  var header = $('#header')
@@ -279,6 +309,21 @@ $(function(){
 
 
 
+<!-- slidebars -->
+<script src="slidebars.js"></script>
+<script>
+        (function($) {
+            $(document).ready(function() {
+                $.slidebars();
+            });
+        }) (jQuery);
+    </script>
+
+
+
+
+<!-- scrollslide -->
+<script src="jquery.scrollslide.js"></script>
 <script>
 $('.mbp,#content-service,.content-left,.content-right').css('visibility','hidden');
 $(window).scroll(function(){
@@ -293,46 +338,7 @@ $(window).scroll(function(){
 });
 </script>
 
-<script>
-$(function(){
-   $('a[href^=#]').click(function() {
-      var speed = 700;
-      var href= $(this).attr("href");
-      var target = $(href == "#" || href == "" ? 'html' : href);
-      var position = target.offset().top - 30;
-      $('body,html').animate({scrollTop:position}, speed, 'swing');
-      return false;
-   });
-});
-</script>
 
-<script>
-function calcParallax(tileheight, speedratio, scrollposition) {
-  return ((tileheight) - (Math.floor(scrollposition / speedratio) % (tileheight+1)));
-}
-
-window.onload = function() {
-
-  window.onscroll = function() {
-    var posY = (document.documentElement.scrollTop) ? document.documentElement.scrollTop : window.pageYOffset;
-
-    var firstWrapping = document.getElementById('firstWrapping');
-    var firstWrappingparallax = calcParallax(1000, 5, posY);
-    firstWrapping.style.backgroundPosition = "0 " + firstWrappingparallax + "px";
-
-  }
-
-}
-</script>
-
-<script src="slidebars.js"></script>
-<script>
-  (function($) {
-    $(document).ready(function() {
-      $.slidebars();
-    });
-  }) (jQuery);
-</script>
 
 </body>
 </html>
