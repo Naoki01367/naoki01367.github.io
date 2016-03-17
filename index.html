@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>EXPERIMENT. | 東京都のクリエイティブ・エージェンシー</title>
   <link rel="stylesheet" href="top.css">
-  <link rel="stylesheet" href="slidebars.css">
+  <link rel="stylesheet" href="slidebars.min.css">
   <link rel="icon" href="images/favicon.png">
   <meta content="EXPERIMENT.（エクスペリメント）は東京都を中心に活動するクリエイティブ・エージェンシーです。紙媒体・Webサイトのデザインから印刷・製造・サイト制作まで行っております。" name="description">
   <meta content='エクスペリメント,EXPERIMENT,えくすぺりめんと,Web,ウェブ制作,ホームページ制作,デザイン,名刺,ノベルティ' name='keywords'>
@@ -24,9 +24,6 @@
 <body>
 
 
-
-  <div id="sb-site">
-
 <!-- - - - - - - - - - - SP-HEADER - - - - - - - - - - - -->
   <div id="sp-header">
     <h1>ドロワーメニューサンプル</h1>
@@ -36,7 +33,9 @@
       </li>
     </ul>
   </div>
-    <!-- - - - - - - - - - - SP-HEADER-END - - - - - - - - - - - -->
+<!-- - - - - - - - - - - SP-HEADER-END - - - - - - - - - - - -->
+
+<div id="sb-site">
 
 <!-- - - - - - - - - - - HEADER - - - - - - - - - - - -->
     <div id="header">
@@ -308,20 +307,6 @@ $(function(){
 </script>
 
 
-
-<!-- slidebars -->
-<script src="slidebars.js"></script>
-<script>
-        (function($) {
-            $(document).ready(function() {
-                $.slidebars();
-            });
-        }) (jQuery);
-    </script>
-
-
-
-
 <!-- scrollslide -->
 <script src="jquery.scrollslide.js"></script>
 <script>
@@ -338,7 +323,15 @@ $(window).scroll(function(){
 });
 </script>
 
-
+<!-- slidebars-->
+<script src="slidebars.min.js"></script>
+<script>
+        (function($) {
+            $(document).ready(function() {
+                $.slidebars();
+            });
+        }) (jQuery);
+    </script> 
 
 </body>
 </html>
