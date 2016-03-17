@@ -550,6 +550,7 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 .sb-slidebar{
   color:#fff;
   padding:0px;
+  z-index: 999;
 }
 #sp-header{
   background:#fff;
