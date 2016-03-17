@@ -547,6 +547,62 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   display: none;
 }
 
+.sb-slidebar{
+   color:#fff;
+   padding:0px;
+   margin-top:54px;
+}
+#sp-header{
+   background:#fff;
+   width:100%;
+   height:54px;
+   position:fixed;
+   top:0;
+   z-index:999;
+}
+#sp-header > h1{
+   text-align:center;
+   color:#000;
+   margin:0px;
+   font-size:14px;
+   line-height:40px;
+}
+.sb-toggle-right{
+   position:absolute;
+   top:0;
+   right:0;
+}
+.navi a{
+   color:#333;
+   display:block;
+   width:40px;
+   height:40px;
+   line-height:40px;
+   text-align:center;
+   text-decoration:none;
+   font-weight:bolder;
+}
+.navi a:after{
+   content:"☰"
+}
+.sb-active .navi a:after{
+   content:"×"
+}
+.menu{
+   list-style:none;
+   background:#666;
+}
+.menu li{
+   border-bottom:#CCC solid 1px;
+   padding:10px;
+}
+.sb-slidebar h2{
+   font-size:14px;
+   padding:0 0 0 10px;
+   height:40px;
+   line-height:40px;
+}
+
 /* topimage */
 
 
@@ -555,7 +611,7 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   background-image:url(images/cover.jpg);
   background-size: cover;
   background-position: center center;
-  position:absolute;;
+  position:absolute;
   top:54px;
   z-index:0;
 }
