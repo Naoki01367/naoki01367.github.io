@@ -20,6 +20,7 @@
 
 
 </head>
+
 <body>
 
 
@@ -42,18 +43,16 @@
     </div><!-- header -->
 <!-- - - - - - - - - - - HEADER-END - - - - - - - - - - - -->
 
-<!-- - - - - - - - - - - sp-HEADER - - - - - - - - - - - -->
-
-    <div id="sp-header">
-      <img src="images/logo.png">
-      <ul class="navi">
-        <li class="sb-toggle-right">
-          <a href="#"></a>
-        </li>
-      </ul>
-    </div>
-
-<!-- - - - - - - - - - - sp-HEADER-END - - - - - - - - - - - -->
+<!-- - - - - - - - - - - SP-HEADER - - - - - - - - - - - -->
+<div id="sp-header">
+  <h1>ドロワーメニューサンプル</h1>
+  <ul class="navi">
+    <li class="sb-toggle-right">
+      <a href="#"></a>
+    </li>
+  </ul>
+</div>
+<!-- - - - - - - - - - - SP-HEADER-END - - - - - - - - - - - -->
 
 
 <!-- - - - - - - - - - - TOPIMGE- - - - - - - - - - - -->
@@ -239,11 +238,12 @@
 <!-- - - - - - - - - - - FOOTER-END - - - - - - - - - - - -->
 
 
+  </div><!-- content-wrap -->
+</div><!-- sb-site -->
+
 <!-- - - - - - - - - - - CONTENT-AREA-END - - - - - - - - - - - -->
 
-  </div><!-- sb-site -->
-
-<div class="sb-slidebar sb-right">
+<div class="sb-slidebar sb-right sb-style-push">
   <h2>左メニューの内容</h2>
   <ul class="menu">
     <li>メニュー1</li>
@@ -253,6 +253,7 @@
     <li>メニュー5</li>
   </ul>
 </div>
+
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
@@ -276,14 +277,6 @@ $(function(){
 });
 </script>
 
-<script src="slidebars.js"></script>
-<script>
-        (function($) {
-            $(document).ready(function() {
-                $.slidebars();
-            });
-        }) (jQuery);
-    </script>
 
 
 <script>
@@ -330,6 +323,15 @@ window.onload = function() {
   }
 
 }
+</script>
+
+<script src="slidebars.js"></script>
+<script>
+  (function($) {
+    $(document).ready(function() {
+      $.slidebars();
+    });
+  }) (jQuery);
 </script>
 
 </body>
