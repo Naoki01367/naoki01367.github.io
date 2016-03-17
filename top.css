@@ -29,7 +29,7 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 
 /*　ヘッダー　*/
 
-#sp-header{
+header{
   display: none;
 }
 
@@ -548,59 +548,55 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 }
 
 .sb-slidebar{
-   color:#fff;
-   padding:0px;
-   margin-top:54px;
+    color:#fff;
+    padding:0px;
 }
-#sp-header{
-   background:#fff;
-   width:100%;
-   height:54px;
-   position:fixed;
-   top:0;
-   z-index:999;
+header{
+    background:#ccc;
+    height:40px;
+    position:relative;
 }
-#sp-header > h1{
-   text-align:center;
-   color:#000;
-   margin:0px;
-   font-size:14px;
-   line-height:40px;
+header h1{
+    text-align:center;
+    color:#000;
+    margin:0px;
+    font-size:14px;
+    line-height:40px;
 }
 .sb-toggle-right{
-   position:absolute;
-   top:0;
-   right:0;
+    position:absolute;
+    top:0;
+    right:0;
 }
 .navi a{
-   color:#333;
-   display:block;
-   width:40px;
-   height:40px;
-   line-height:40px;
-   text-align:center;
-   text-decoration:none;
-   font-weight:bolder;
+    color:#333;
+    display:block;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    text-decoration:none;
+    font-weight:bolder;
 }
 .navi a:after{
-   content:"☰"
+    content:"☰"
 }
 .sb-active .navi a:after{
-   content:"×"
+    content:"×"
 }
 .menu{
-   list-style:none;
-   background:#666;
+    list-style:none;
+    background:#666;
 }
 .menu li{
-   border-bottom:#CCC solid 1px;
-   padding:10px;
+    border-bottom:#CCC solid 1px;
+    padding:10px;
 }
 .sb-slidebar h2{
-   font-size:14px;
-   padding:0 0 0 10px;
-   height:40px;
-   line-height:40px;
+    font-size:14px;
+    padding:0 0 0 10px;
+    height:40px;
+    line-height:40px;
 }
 
 /* topimage */
