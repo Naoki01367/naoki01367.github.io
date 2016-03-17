@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 }
 
 /*===============================================
-画面の横幅が769px以上（パソコン用）
+画面の横幅が1200px以上（パソコン用）
 ===============================================*/
 @media screen and (min-width: 769px){
 
@@ -262,6 +262,11 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 
 
 /* コンテンツ */
+
+#sb-site,#header,#content-wrap,#topimage,.content-white,.content-resp,.contetnt-join,.shadow,.shadow-blue,.footer{
+  min-width: 1200px;
+  overflow: hidden;
+}
 
 
 #content-wrap{
@@ -537,7 +542,7 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 /*===============================================
 画面の横幅が640pxまで（スマホ用）
 ===============================================*/
-@media screen and (max-width:640px){
+@media screen and (max-width:769px){
 
 
 /*　ヘッダー　*/
@@ -670,7 +675,7 @@ display:block;
   display:block;
   overflow: hidden;
   height:auto !important;
-  padding:70px 0;
+  padding:10px 0;
 }
 
 .content-white{
