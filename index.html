@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>EXPERIMENT. | 東京都のクリエイティブ・エージェンシー</title>
   <link rel="stylesheet" href="top.css">
-  <link rel="stylesheet" href="slidebars.min.css">
+  <link rel="stylesheet" href="slicknav.css">
   <link rel="icon" href="images/favicon.png">
   <meta content="EXPERIMENT.（エクスペリメント）は東京都を中心に活動するクリエイティブ・エージェンシーです。紙媒体・Webサイトのデザインから印刷・製造・サイト制作まで行っております。" name="description">
   <meta content='エクスペリメント,EXPERIMENT,えくすぺりめんと,Web,ウェブ制作,ホームページ制作,デザイン,名刺,ノベルティ' name='keywords'>
@@ -24,16 +24,14 @@
 <body>
 
 <div id="sb-site">
-<!-- - - - - - - - - - - SP-HEADER - - - - - - - - - - - -->
-<header>
-  <h1>ドロワーメニューサンプル</h1>
-  <ul class="navi">
-    <li class="sb-toggle-right">
-      <a href="#"></a>
-    </li>
+
+  <a href="#sb-site"><img src="images/logo.png" class="sp-logo"></a>
+  <ul id="menu">
+  	<li><a href="#about">ABOUT</a></li>
+  	<li><a href="#service">SERVICE</a></li>
+  	<li><a href="#price">PRICE</a></li>
+  	<li><a href="#join">CONTACT</a></li>
   </ul>
-</header>
-<!-- - - - - - - - - - - SP-HEADER-END - - - - - - - - - - - -->
 
 <!-- - - - - - - - - - - HEADER - - - - - - - - - - - -->
     <div id="header">
@@ -237,20 +235,9 @@
   </div><!-- content-wrap -->
 </div><!-- sb-site -->
 
-<div class="sb-slidebar sb-right sb-style-push">
-  <h2>左メニューの内容</h2>
-  <ul class="menu">
-    <li>メニュー1</li>
-    <li>メニュー2</li>
-    <li>メニュー3</li>
-    <li>メニュー4</li>
-    <li>メニュー5</li>
-  </ul>
-</div>
-
 <!-- - - - - - - - - - - CONTENT-AREA-END - - - - - - - - - - - -->
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
 
@@ -316,15 +303,15 @@
   });
   </script>
 
-  <!-- Slidebars -->
-  <script src="slidebars.min.js"></script>
+  <!-- slicknav -->
+  <script src="jquery.slicknav.min.js"></script>
   <script>
-    (function($) {
-      $(document).ready(function() {
-        $.slidebars();
-      });
-    }) (jQuery);
-  </script>
+	$(function(){
+		$('#menu').slicknav();
+	});
+</script>
+
+
 
 </body>
 </html>
