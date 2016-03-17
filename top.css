@@ -5,7 +5,6 @@ html,body{
   width:100%;
   height:auto;
   margin:0;
-  background-color:black;
 }
 
 h1,h2,h3,h4,h5,h6,p,a,li{
@@ -29,13 +28,17 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 
 /*　ヘッダー　*/
 
-header{
+.slicknav_menu {
+	display:none;
+}
+
+.sp-logo{
   display: none;
 }
 
- .sb-slide{
-   display: none;
- }
+#menu{
+  display: none;
+}
 
 #header{
   height:140px;
@@ -319,23 +322,19 @@ header{
   margin:0 auto;
   height:400px;
   padding:0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  display: block;
+  display: table;
 }
 
 .content-left,.content-right{
   width:50%;
   min-height:300px;
-  height:auto !important;
-  height:300px;
   padding:50px;
   margin:0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   float:left;
+  display: table-cell;
 }
 
 .footer{
@@ -468,7 +467,7 @@ header{
 
 .price-img{
   display: block;
-  width: 80%;
+  width: 70%;
   margin:0 auto;
 }
 
@@ -543,60 +542,24 @@ header{
 
 /*　ヘッダー　*/
 
+
+.js .slicknav_menu {
+
+display:block;
+
+}
+
 #header{
   display: none;
 }
 
-.sb-slidebar{
-    color:#fff;
-    padding:0px;
-}
-header{
-    background:#ccc;
-    height:40px;
-    position:relative;
-}
-header h1{
-    text-align:center;
-    color:#000;
-    margin:0px;
-    font-size:14px;
-    line-height:40px;
-}
-.sb-toggle-right{
-    position:absolute;
-    top:0;
-    right:0;
-}
-.navi a{
-    color:#333;
-    display:block;
-    width:40px;
-    height:40px;
-    line-height:40px;
-    text-align:center;
-    text-decoration:none;
-    font-weight:bolder;
-}
-.navi a:after{
-    content:"☰"
-}
-.sb-active .navi a:after{
-    content:"×"
-}
-.menu{
-    list-style:none;
-    background:#666;
-}
-.menu li{
-    border-bottom:#CCC solid 1px;
-    padding:10px;
-}
-.sb-slidebar h2{
-    font-size:14px;
-    padding:0 0 0 10px;
-    height:40px;
-    line-height:40px;
+.sp-logo{
+  display: block;
+  width:150px;
+  position: fixed;
+  top:20px;
+  left:20px;
+  z-index: 9999;
 }
 
 /* topimage */
@@ -608,7 +571,7 @@ header h1{
   background-size: cover;
   background-position: center center;
   position:absolute;
-  top:54px;
+  top:53px;
   z-index:0;
 }
 
