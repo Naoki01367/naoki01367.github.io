@@ -667,11 +667,11 @@ display:block;
 }
 
 .title-top{
-  height:200px;
+  height:50%;
 }
 
 .title{
-  height:400px;
+  height:50%;
 }
 
 .title-top > h2,.title >h2{
