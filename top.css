@@ -759,23 +759,26 @@ display:block;
 }
 
 .content-resp,.contetnt-join{
-  background-size: cover;
-  min-height: 400px;
+  min-height: 500px;
   padding:0;
   position: relative;
 }
 
 .content-resp{
-  background-image: url(images/iphone.jpg);
+  background: url(images/iphone.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .contetnt-join{
-  background-image: url(images/about.jpg);
+  background: url(images/about.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
