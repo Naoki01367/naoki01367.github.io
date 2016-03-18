@@ -646,7 +646,7 @@ display:block;
 }
 
 .shadow,.shadow-blue{
-  height:500px;
+  height:600px;
   z-index:999;
 }
 
@@ -759,7 +759,7 @@ display:block;
 }
 
 .content-resp,.contetnt-join{
-  min-height: 500px;
+  min-height: 600px;
   padding:0;
   position: relative;
 }
@@ -770,7 +770,6 @@ display:block;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .contetnt-join{
@@ -779,7 +778,6 @@ display:block;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .content-section-text{
