@@ -197,9 +197,9 @@
           </li><!-- content-left -->
 
           <li class="content-right">
-            <p class="content-title-left">WEB制作</p>
-            <p class="content-text-left">個人・法人問わず、お客様のご要望とEXPERIMENT.のデザインメソッドを掛け合わせたWEBサイト制作を承ります。レスポンシブ対応、CMS導入、納品後のサポートまでお任せください。価格は実装内容によって大きく変動しますので、事前に入念なヒアリングを実施致します。</p>
-            <p class="content-text-price">WEB制作：約15万円〜　保守・運用：約5,000円／月〜</di>
+              <p class="content-title-left">WEB制作</p>
+              <p class="content-text-left">個人・法人問わず、お客様のご要望とEXPERIMENT.のデザインメソッドを掛け合わせたWEBサイト制作を承ります。レスポンシブ対応、CMS導入、納品後のサポートまでお任せください。価格は実装内容によって大きく変動しますので、事前に入念なヒアリングを実施致します。</p>
+              <p class="content-text-price">WEB制作：約15万円〜　保守・運用：約5,000円／月〜</p>
           </li><!-- content-right -->
 
         </ul><!-- content-section-wrap -->
@@ -212,7 +212,7 @@
           <li class="content-right">
             <p class="content-title-left">グラフィックデザイン</p>
             <p class="content-text-left">名刺・ポスター・フライヤー・POP・雑誌・WEB広告などあらゆる分野のグラフィックデザインをご提案致します。価格はページ数等に対する作業工数を計算の上お見積もりしております。また、月額契約も受け付けております。</p>
-            <p class="content-text-price">デザイン：約2万円〜　月額契約：要相談</di>
+            <p class="content-text-price">デザイン：約2万円〜　月額契約：要相談</p>
           </li><!-- content-right -->
 
         </ul><!-- content-section-wrap -->
@@ -225,7 +225,7 @@
           <li class="content-right">
             <p class="content-title-left">印刷・ノベルティグッズ製造</p>
             <p class="content-text-left">デザインとセットでご注文の方はお得なパッケージとして割引をさせて頂いております。フライヤーや名刺等に加え、クリアファイル等のオフィスアイテム、Tシャツやその他アクセサリーなどのグッズ製造もお任せください。主にメジャーアーティストのコンサートグッズの製造実績を持っております。</p>
-            <p class="content-text-price">印刷・製造：要相談</di>
+            <p class="content-text-price">印刷・製造：要相談</p>
           </li><!-- content-right -->
 
         </ul><!-- content-section-wrap -->
@@ -271,22 +271,13 @@
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
 
   <script>
-  function calcParallax(tileheight, speedratio, scrollposition) {
-    return ((tileheight) - (Math.floor(scrollposition / speedratio) % (tileheight+1)));
-  }
-
-  window.onload = function() {
-
-    window.onscroll = function() {
-      var posY = (document.documentElement.scrollTop) ? document.documentElement.scrollTop : window.pageYOffset;
-
-      var firstWrapping = document.getElementById('firstWrapping');
-      var firstWrappingparallax = calcParallax(1000, 5, posY);
-      firstWrapping.style.backgroundPosition = "0 " + firstWrappingparallax + "px";
-
-    }
-
-  }
+  $(function() {
+  $(window).scroll(function(){
+  var y = $(this).scrollTop();
+  $('#topimage').css('background-position', '0 ' + parseInt( -y / 5 ) + 'px');
+  $('').css('background-position', '0 ' + parseInt( -y / 50 ) + 'px');
+  });
+  });
   </script>
 
 
