@@ -642,7 +642,7 @@ display:block;
 #topimage{
   display: table;
   height: 100vh;
-  background-image:url(images/cover.jpg)no-repeat center center ; 
+  background-image:url(images/cover.jpg); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
