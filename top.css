@@ -642,11 +642,12 @@ display:block;
 #topimage{
   display: table;
   height: 100vh;
-  background-image:url(images/cover.jpg) center center; 
+  background-image:url(images/cover.jpg); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position:center center;
   background-attachment: fixed;
   position:relative;
   top:0;
