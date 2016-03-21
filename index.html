@@ -5,6 +5,7 @@
   <title>EXPERIMENT. | 東京都のクリエイティブ・エージェンシー</title>
   <link rel="stylesheet" href="top.css">
   <link rel="stylesheet" href="slicknav.css">
+  <link rel="stylesheet" href="flexslider.css">
   <link rel="icon" href="images/favicon.png">
   <meta content="EXPERIMENT.（エクスペリメント）は東京都を中心に活動するクリエイティブ・エージェンシーです。紙媒体・Webサイトのデザインから印刷・製造・サイト制作まで行っております。" name="description">
   <meta content='エクスペリメント,EXPERIMENT,えくすぺりめんと,Web,ウェブ制作,ホームページ制作,デザイン,名刺,ノベルティ' name='keywords'>
@@ -53,14 +54,18 @@
     <div id="topimage">
       <div class="overlay">
         <div class="title-top">
-          <h2>WE'LL HELP YOUR BUSINESS</h2>
-          <h6>Graphic &amp; Web design , Manufacturing , Printing</h6>
+          <h6>GRAPHIC &amp; WEB DESIGN - MANUFACTURING - PRINTING</h6>
+
+          <div class="flexslider">
+            <ul class="slides">
+              <li>WE ARE <span>CREATIVE</span> AGENCY</li>
+              <li>WE'LL HELP YOUR <span>BUSINESS</span></li>
+              <li>WE MAKE <span>AWSOME</span> DESIGN</li>
+            </ul>
+          </div><!-- flexslider -->
 
           <!-- トップボタンエリア　-->
-          <div id="btn-area">
-            <a href="mailto:experiment.sugiyama@gmail.com" target="_blank" class="btn-blue">GET IN TOUCH</a>
-            <a href="#join" class="btn-white">JOIN US</a>
-          </div><!-- btn-area -->
+            <a href="#join" class="btn-white">CONTACT US</a>
 
         </div><!-- title -->
       </div><!-- overlay -->
@@ -270,18 +275,20 @@
 
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
 
-  <script>
-  $(function() {
-  $(window).scroll(function(){
-  var y = $(this).scrollTop();
-  $('#topimage').css('background-position', '0 ' + parseInt( -y / 5 ) + 'px');
-  $('').css('background-position', '0 ' + parseInt( -y / 50 ) + 'px');
+<!-- flexslider -->
+  <script src="jquery.flexslider.js"></script>
+  <script type="text/javascript" charset="utf-8">
+  $(function(){
+    $('.flexslider').flexslider({
+      slideshowSpeed: 4000　,//スライドの速度
+      animationDuration: 800 ,
+    });
   });
-  });
+  </script>
   </script>
 
 
-
+<!-- header scroll -->
   <script>
   $(function(){
    var header = $('#header')
