@@ -158,7 +158,7 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 
 #topimage{
   height: 100vh;
-  background-image:url(images/cover.jpg);
+  background-image:url(images/back2.jpg);
   background-size: cover;
   background-attachment: fixed;
   display: table;
@@ -174,11 +174,18 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   min-height: 400px;
   position:relative;
   top:0;
-  z-index: 2;
 }
 
 .shadow,.overlay{
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.6);
+  background-image: url(images/dotted.png);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  background-repeat-x: repeat;
+  background-repeat-y: repeat;
 }
 
 .title,.title-top{
@@ -189,34 +196,31 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   text-align:center;
 }
 
-.title-top > h2,.title >h2{
+.slides > li, .title >h2{
   display: block;
-  margin:10px 0;
-  font-size:46px;
-  font-weight:lighter;
+  margin:20px 0 10px 0;
+  font-size:54px;
   color:#fff;
   letter-spacing:5px;
 }
 
+.slides > li > span{
+  color:rgb(64, 139, 153);
+}
+
 .title-top > h6{
   display: block;
+  opacity: 0.8;
   color:#f3f3f3;
-  margin:0 auto;
+  margin:0 auto 30px auto;
   font-family:'Open Sans','open-sans', sans-serif;
-  font-style:italic;
-  font-size:21px;
+  font-size:14px;
   font-weight:lighter;
   -webkit-font-smoothing: antialiased;
 }
 
-#btn-area{
-  display: block;
-  width:440px;
-  height:auto;
-  margin:0 auto;
-}
 
-.btn-blue,.btn-white,.btn-contact{
+.btn-white,.btn-contact{
   display: block;
   width: 200px;
   padding:10px 0;
@@ -230,19 +234,11 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   transition:0.3s;
 }
 
-.btn-blue{
-  margin:30px 10px;
-  box-sizing: border-box;
-  background-color:rgb(64, 139, 153);
-  border:1px solid rgb(64, 139, 153);
-  float:left;
-}
-
 .btn-white{
-  margin:30px 10px;
+  margin:30px auto 0 auto;
   box-sizing: border-box;
-  border:1px solid #fff;
-  float:left;
+  border:0.5px dotted #fff;
+  z-index: 1;
 }
 
 .btn-contact{
@@ -258,8 +254,8 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   border-radius: 10px;
 }
 
-#btn-area > a:hover{
-  border-radius:10px;
+.btn-white:hover{
+  background-color: rgba(255, 255, 255,0.3);
 }
 
 
@@ -505,6 +501,14 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 .shadow-blue{
   background-color:	#408b99;
   opacity:0.9;
+  background-image: url(images/dotted.png);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  background-repeat-x: repeat;
+  background-repeat-y: repeat;
 }
 
 
@@ -642,14 +646,14 @@ display:block;
 #topimage{
   display: table;
   height: 100vh;
-  background-image:url(images/cover.jpg); 
+  background-image:url(images/cover.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position:center center;
+  background-position: center center;
   background-attachment: fixed;
-  position:fixed;
+  position:relative;
   top:0;
   z-index:0;
 }
@@ -687,7 +691,6 @@ display:block;
 .title-top{
   height:50%;
 }
-
 .title{
   height:50%;
 }
@@ -791,7 +794,7 @@ display:block;
 }
 
 .content-resp{
-  background: url(images/iphone.jpg)no-repeat center center fixed; 
+  background: url(images/iphone.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
