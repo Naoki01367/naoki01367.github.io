@@ -44,7 +44,7 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 #header{
   height:140px;
   padding:30px 0;
-  position: fixed;
+  position: absolute;
   top:0;
   z-index:999;
   -moz-transition:0.5s;
@@ -160,35 +160,37 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   height: 100vh;
   background-image:url(images/cover.jpg);
   background-size: cover;
-  position:fixed;
+  background-attachment: fixed;
+  display: table;
+  position:relative;
   top:0;
   z-index:0;
 }
 
 .shadow,.shadow-blue,.overlay{
+  display: table;
+  width:100%;
   height: 100%;
   min-height: 400px;
+  position:relative;
+  top:0;
   z-index: 2;
 }
 
 .shadow,.overlay{
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.7);
 }
 
 .title,.title-top{
-  display: block;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  margin: auto auto;
+  display:table-cell;
+  vertical-align: middle;
+  position: relative;
   width: 100%;
-  height:200px;
   text-align:center;
 }
 
 .title-top > h2,.title >h2{
+  display: block;
   margin:10px 0;
   font-size:46px;
   font-weight:lighter;
@@ -197,6 +199,7 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 }
 
 .title-top > h6{
+  display: block;
   color:#f3f3f3;
   margin:0 auto;
   font-family:'Open Sans','open-sans', sans-serif;
@@ -207,6 +210,7 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 }
 
 #btn-area{
+  display: block;
   width:440px;
   height:auto;
   margin:0 auto;
@@ -271,13 +275,13 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 
 
 #content-wrap{
-  margin:100vh 0 0 0;
+  margin:0;
   background-color:white;
   position: absolute;
   z-index:1;
 }
 
-.content-white,.content-smoke,.content-resp,.contetnt-join{
+.content-white,.content-smoke{
   display:block;
   overflow: hidden;
   height:auto !important;
@@ -293,24 +297,23 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 }
 
 .content-resp,.contetnt-join{
-  background-size: cover;
-  min-height: 400px;
+  background-size:cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat !important;
+  overflow: hidden;
+  height: 100%;
   padding:0;
   position: relative;
+  display: table;
+  z-index: 0;
 }
 
 .content-resp{
   background-image: url(images/iphone.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .contetnt-join{
   background-image: url(images/about.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .content-section-text{
@@ -324,20 +327,24 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 }
 
 .content-section-wrap{
-  display: table;
   width:80%;
+  height:250px;
   margin:50px auto 0 auto;
   padding:0;
+  position: relative;
+  display: table;
   list-style: none;
+  clear: both;
 }
 
 .content-left,.content-right{
   margin:0;
+  height:250px;
+  padding:auto 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  float:left;
-  display: table-cell;
+  display:table-cell;
   vertical-align: middle;
 }
 
@@ -348,7 +355,9 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 
 .content-right{
   width:60%;
+  padding-left:50px;
 }
+
 
 .footer{
   background-color:#121212;
@@ -631,21 +640,27 @@ display:block;
 
 
 #topimage{
+  display: table;
   height: 100vh;
   background-image:url(images/cover.jpg);
   background-size: cover;
   background-position: center center;
-  position:absolute;
+  background-attachment: fixed;
+  position:relative;
   top:0;
   z-index:0;
 }
 
 .overlay{
+  display: table;
+  width:100%;
   height: 100%;
   z-index: 2;
 }
 
 .shadow,.shadow-blue{
+  display: table;
+  width:100%;
   height:600px;
   z-index:999;
 }
@@ -655,17 +670,17 @@ display:block;
 }
 
 .title,.title-top{
-  display: block;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  margin: auto auto;
-  width: 80%;
+  display:table-cell;
+  vertical-align: middle;
+  position: relative;
   text-align:center;
+  padding:0 10%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+/*
 .title-top{
   height:50%;
 }
@@ -673,8 +688,10 @@ display:block;
 .title{
   height:50%;
 }
+*/
 
 .title-top > h2,.title >h2{
+  display: block;
   margin:10px 0;
   font-size:24px;
   color:#fff;
@@ -682,6 +699,7 @@ display:block;
 }
 
 .title-top > h6{
+  display: block;
   color:#f3f3f3;
   margin:0 auto;
   font-family:'Open Sans','open-sans', sans-serif;
@@ -691,6 +709,7 @@ display:block;
 }
 
 #btn-area{
+  display: block;
   width:200px;
   height:auto;
   margin:0 auto;
@@ -708,6 +727,8 @@ display:block;
 
 .btn-blue{
   margin:30px auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color:rgb(64, 139, 153);
   border-radius: 20px;
@@ -720,6 +741,8 @@ display:block;
 .btn-contact{
   color: rgb(64, 139, 153);
   margin:20px auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border:1px solid rgb(64, 139, 153);
 }
@@ -737,7 +760,7 @@ display:block;
 
 
 #content-wrap{
-  margin:100vh 0 0 0;
+  margin:0;
   background-color:white;
   position: absolute;
   z-index:1;
@@ -765,11 +788,12 @@ display:block;
 }
 
 .content-resp{
-  background: url(images/iphone.jpg) no-repeat center center fixed;
+  background: url(images/iphone.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .contetnt-join{
