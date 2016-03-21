@@ -643,7 +643,7 @@ display:block;
   display: table;
   height: 100vh;
   background-image:url(images/cover.jpg);
-  background-size:100% auto;
+  background-size:auto 100%;
   background-position: center center;
   background-attachment: fixed;
   position:relative;
