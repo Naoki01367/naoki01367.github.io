@@ -22,6 +22,8 @@ h1,h2,h3,h4,h5,h6,p,a,li{
   margin:0;
 }
 
+#loading-overlay {background-color: #ffffff;}
+
 .spinner {
   margin: 100px auto 0;
   width: 70px;
