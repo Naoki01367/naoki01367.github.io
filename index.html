@@ -18,7 +18,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-<script src="fakeLoader.min.js"></script>
 
 
 
@@ -275,8 +274,19 @@
 <!-- - - - - - - - - - - CONTENT-AREA-END - - - - - - - - - - - -->
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+
+<script src="fakeLoader.min.js"></script>
+    <script>
+     $("#fakeLoader").fakeLoader({
+       timeToHide:1200, //Time in milliseconds for fakeLoader disappear
+       zIndex:999, // Default zIndex
+       spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+       bgColor:"#2ecc71", //Hex, RGB or RGBA colors
+       // imagePath:"yourPath/customizedImage.gif" //If you want can you insert your custom image
+     });
+    </script>
+
 
 <!-- flexslider -->
   <script src="jquery.flexslider.js"></script>
