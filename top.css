@@ -23,6 +23,76 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 }
 
 
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+.spinner {
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center;
+}
+ 
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+ 
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+}
+ 
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+ 
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+ 
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0.0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+ 
+@keyframes bouncedelay {
+  0%, 80%, 100% { transform: scale(0.0) }
+  40% { transform: scale(1.0) }
+}
+
 /*===============================================
 画面の横幅が1200px以上（パソコン用）
 ===============================================*/
